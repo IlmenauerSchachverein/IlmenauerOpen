@@ -36,7 +36,6 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="open/startrangliste" title="Startrangliste" icon="user" >}}
 {{< card link="anmeldung" title="Anmeldung" icon="user" target="_blank">}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
-{{< card link="tabellen" title="Download Tabellen" icon="user" target="_blank" tag="pdf">}}
 {{< /cards >}}
 
 ### Paarungen aller Runden
