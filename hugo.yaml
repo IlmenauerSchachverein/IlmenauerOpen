@@ -30,7 +30,7 @@ menu:
       pageRef: "anmeldung"
       weight: 1
     - name: Archiv
-      url: "archiv/2024"
+      url: "/archiv/2024"
       weight: 1
     - name: Datenschutzerklärung
       pageRef: datenschutz
