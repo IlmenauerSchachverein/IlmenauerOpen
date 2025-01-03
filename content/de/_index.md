@@ -21,7 +21,8 @@ type: docs
   </div>
 </div>
 {{< callout type="info" >}}
- Sollten Sie Fehler finden, Fragen haben oder sonstige Anliegen, wenden Sie sich bitte zeitnah an uns.
+Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie über das Menü oder direkt unter [https://open.ilmenauer-schachverein.de/archiv/2024/](https://open.ilmenauer-schachverein.de/archiv/2024/) einsehen.
+
 {{< /callout >}}
 
 
