@@ -1,11 +1,13 @@
 ---
 title: Archiv
-toc: false
+toc: true
 type: docs
 ---
 
 Entdecke die Ergebnisse, Partien und Highlights vergangener Turniere des Ilmenauer Opens. Eine Reise durch die Geschichte unseres Schachwettbewerbs.
 
-## 2024 
+## Übersicht über die einzelnen Jahre 
 
-[2024](2024/)
+{{< cards >}}
+  {{< card link="2024" title="2024" icon="user" >}}
+{{< /cards >}}
