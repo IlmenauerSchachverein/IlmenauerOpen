@@ -47,7 +47,7 @@ menu:
         type: search
     - name: GitHub
       weight: 6
-      url: "https://github.com/IlmenauerSchachverein/IlmenauerOpen2025"
+      url: "https://github.com/IlmenauerSchachverein/IlmenauerOpen"
       params:
         icon: github
     - name: Instagram
