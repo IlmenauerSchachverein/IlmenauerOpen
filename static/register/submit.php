@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $handy = isset($_POST['handy']) ? htmlspecialchars($_POST['handy']) : 'Nicht angegeben';
     $email = htmlspecialchars($_POST['email']);
     $rabatt = htmlspecialchars($_POST['rabatt']);
-    $bestaetigung = isset($_POST['bestaetigung']) ? 'Ja' : 'Nein';
-    $agb = isset($_POST['agb']) ? 'Ja' : 'Nein';
+    $bestaetigung = 'Nein';
+    $agb = '?';
     $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein'; // Neues Feld
 
     // Honeypot-Schutz
