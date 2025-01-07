@@ -86,9 +86,9 @@ Schachbegeisterung. Viel Spaß beim Ilmenauer Open 2024!
 {{< card link="blitz/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
-### Sondertabellen
+### Auswertung
 
 {{< cards >}}
-{{< card link="blitz/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="blitz/spezial/elo" title="ELO Auswertung" icon="user" >}}
+{{< card link="blitz/auswertung/dwz" title="DWZ Auswertung" icon="user" >}}
+{{< card link="blitz/auswertung/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}

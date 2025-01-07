@@ -39,11 +39,10 @@ type: docs
 {{< /cards >}}
 
 
-## Sondertabellen
+## Auswertung
 {{< cards >}}
-  {{< card link="spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-  {{< card link="spezial/elo" title="ELO Auswertung" icon="user" >}}
-  {{< card link="spezial/progress" title="Fortschrittstabelle" icon="user" >}}
+  {{< card link="tabellen/dwz" title="DWZ Auswertung" icon="user" >}}
+  {{< card link="tabellen/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}
 
 

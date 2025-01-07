@@ -1,5 +1,5 @@
 ---
-title: Spezialtabellen
+title: Auswertung
 toc: false
 type: docs
 ---
@@ -7,6 +7,5 @@ type: docs
 {{< cards >}}
   {{< card link="dwz" title="DWZ-Auswertung" icon="user" >}}
   {{< card link="elo" title="ELO-Auswertung" icon="user" >}}
-  {{< card link="Fortschrittstabelle" title="Fortschrittstabelle" icon="user" >}}
 
 {{< /cards >}}
