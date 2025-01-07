@@ -62,6 +62,17 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="open/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
+## Sondergruppen
+{{< cards >}}
+  {{< card link="open/gruppen/u18" title="U18" icon="user" >}}
+  {{< card link="open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
+  {{< card link="open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
+  {{< card link="open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
+  {{< card link="open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
+  {{< card link="open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
+  {{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
+{{< /cards >}}
+
 ### Sondertabellen
 
 {{< cards >}}
@@ -114,7 +125,5 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="blitz/rangliste/10" title="Rangliste nach Runde 10" icon="user" >}}
 {{< card link="blitz/rangliste/11" title="Rangliste nach Runde 11" icon="user" >}}
 {{< card link="blitz/rangliste/12" title="Rangliste nach Runde 12" icon="user" >}}
-
-
 {{< /cards >}}
 

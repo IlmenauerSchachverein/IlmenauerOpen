@@ -38,6 +38,16 @@ type: docs
   {{< card link="rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
+## Sondergruppen
+{{< cards >}}
+  {{< card link="gruppen/u18" title="U18" icon="user" >}}
+  {{< card link="gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
+  {{< card link="gruppen/u1800" title="U1800 DWZ" icon="user" >}}
+  {{< card link="gruppen/u1600" title="U1600 DWZ" icon="user" >}}
+  {{< card link="gruppen/u1400" title="U1400 DWZ" icon="user" >}}
+  {{< card link="gruppen/u1200" title="U1200 DWZ" icon="user" >}}
+  {{< card link="gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
+{{< /cards >}}
 
 ## Auswertung
 {{< cards >}}
