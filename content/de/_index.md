@@ -60,6 +60,24 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="2025/open/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
+
+{{< callout type="info" >}}
+Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
+{{< /callout >}}
+
+
+## Sondergruppen
+{{< cards >}}
+{{< card link="open/gruppen/u18" title="U18" icon="user" >}}
+{{< card link="open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
+{{< card link="open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
+{{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
+{{< /cards >}}
+
+
 ### Auswertung
 
 {{< cards >}}
