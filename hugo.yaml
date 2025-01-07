@@ -33,10 +33,10 @@ menu:
       pageRef: "/2025/ausschreibung"
       weight: 1
     - name: Runden
-      pageRef: "/2025/runden"
+      pageRef: "/2025/open/runden"
       weight: 1
     - name: Ranglisten
-      pageRef: "/2025/ranglisten"
+      pageRef: "/2025/open/ranglisten"
       weight: 1
     - name: Datenschutzerklärung
       pageRef: datenschutz
