@@ -1,6 +1,5 @@
 ---
 title: "Bilder"
-date: 2024-11-04
 type: docs
 ---
 
