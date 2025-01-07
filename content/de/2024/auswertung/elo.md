@@ -1,8 +1,8 @@
 ---
-
 title: ELO Auswertung
 type: docs
 toc: false
+---
 
 | Nr. | Teilnehmer               | Tit. | Att. | Land | Ro   | Niv  | W   | We   | n   | Rp   | Rn   | Diff./K  |
 | --- | ------------------------ | ---- | ---- | ---- | ---- | ---- | --- | ---- | --- | ---- | ---- | -------- |
