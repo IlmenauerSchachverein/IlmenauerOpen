@@ -50,11 +50,3 @@ type: docs
   {{< card link="rangliste/12" title="Rangliste nach Runde 12" icon="user" >}}
 {{< /cards >}}
 
-
-## Sondertabellen
-{{< cards >}}
-  {{< card link="spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-  {{< card link="spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< /cards >}}
-
-

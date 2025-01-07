@@ -60,11 +60,11 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="2025/open/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
-### Sondertabellen
+### Auswertung
 
 {{< cards >}}
-{{< card link="2025/open/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="2025/open/spezial/elo" title="ELO Auswertung" icon="user" >}}
+{{< card link="2025/open/auswertung/dwz" title="DWZ Auswertung" icon="user" >}}
+{{< card link="2025/open/auswertung/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}
 
 ## Blitzturnier
