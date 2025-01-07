@@ -10,7 +10,7 @@ toc: false
 
 
 
-## Download der Tabellen vom Open
+## Download der Tabellen aus dem Open
 {{< cards >}}
   {{< card link="/2024/pdf/open/DWZ.pdf" title="DWZ-Auswertung" icon="user" target="_blank">}}
   {{< card link="/2024/pdf/open/ELO.pdf" title="ELO-Auswertung" icon="user" target="_blank" >}}
@@ -21,7 +21,7 @@ toc: false
 {{< /cards >}}
 
 
-## Download der Tabellen vom Blitz
+## Download der Tabellen aus dem Blitzturnier
 
 {{< cards >}}
   {{< card link="/2024/pdf/blitz/DWZ.pdf" title="DWZ-Auswertung" icon="user"  target="_blank" >}}
