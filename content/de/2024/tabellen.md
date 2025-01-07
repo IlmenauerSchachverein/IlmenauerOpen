@@ -24,10 +24,10 @@ toc: false
 ## Download der Tabellen vom Blitz
 
 {{< cards >}}
-  {{< card link="/2024/pdf/open/DWZ.pdf" title="DWZ-Auswertung" icon="user"  target="_blank" >}}
-  {{< card link="/2024/pdf/open/ELO.pdf" title="ELO-Auswertung" icon="user" target="_blank" >}}
-  {{< card link="/2024/pdf/open/Paarungen.pdf" title="Paarungen" icon="user" target="_blank" >}}
-  {{< card link="/2024/pdf/open/Rangliste.pdf" title="End Rangliste" icon="user" target="_blank" >}}
-  {{< card link="/2024/pdf/open/Spieler.pdf" title="Spielerformular" icon="user" target="_blank" >}}
-  {{< card link="/2024/pdf/open/Startrangliste.pdf" title="Startrangliste" icon="user" target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/DWZ.pdf" title="DWZ-Auswertung" icon="user"  target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/ELO.pdf" title="ELO-Auswertung" icon="user" target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/Paarungen.pdf" title="Paarungen" icon="user" target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/Rangliste.pdf" title="End Rangliste" icon="user" target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/Spieler.pdf" title="Spielerformular" icon="user" target="_blank" >}}
+  {{< card link="/2024/pdf/blitz/Startrangliste.pdf" title="Startrangliste" icon="user" target="_blank" >}}
 {{< /cards >}}
