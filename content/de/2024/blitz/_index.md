@@ -36,12 +36,3 @@ type: docs
   {{< card link="rangliste/6" title="Rangliste nach Runde 6" icon="user" >}}
   {{< card link="rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
-
-
-## Sondertabellen
-{{< cards >}}
-  {{< card link="spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-  {{< card link="spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< /cards >}}
-
-
