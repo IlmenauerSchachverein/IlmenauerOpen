@@ -1,5 +1,5 @@
 ---
-title: Startrangliste - Open
+title: Startrangliste
 toc: false
 type: docs
 ---
