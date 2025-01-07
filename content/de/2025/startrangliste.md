@@ -1,5 +1,5 @@
 ---
-title: Startrangliste - Blitz
+title: Startrangliste - Open
 toc: false
 type: docs
 ---
