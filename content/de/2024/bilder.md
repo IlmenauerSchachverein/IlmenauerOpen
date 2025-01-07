@@ -3,8 +3,6 @@ title: "Bilder"
 type: docs
 ---
 
-# Bildergalerie des 1. Ilmenauer Open 2024  
-
 Hier finden Sie die schönsten Momente des Turniers, festgehalten in unserer Bildergalerie.  
 
 ![Ilmenauer Open 2024 - Bild 1](/2024/bilder/Ilmenauer_Open_2024_001.jpg)  
