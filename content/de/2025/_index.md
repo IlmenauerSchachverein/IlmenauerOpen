@@ -3,6 +3,7 @@ title: 2. Ilmenauer Open 2025
 toc: false
 type: docs
 ---
+
 <style>
   @media (max-width: 600px) {
     .desktop-only {
@@ -10,7 +11,6 @@ type: docs
     }
   }
 </style>
-
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; padding-right: 20px;">
@@ -25,9 +25,7 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 
 {{< /callout >}}
 
-
 ## Open
-
 
 ### Wichtige Informationen
 
@@ -63,14 +61,15 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< /cards >}}
 
 ## Sondergruppen
+
 {{< cards >}}
-  {{< card link="open/gruppen/u18" title="U18" icon="user" >}}
-  {{< card link="open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
-  {{< card link="open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
-  {{< card link="open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
-  {{< card link="open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
-  {{< card link="open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
-  {{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
+{{< card link="open/gruppen/u18" title="U18" icon="user" >}}
+{{< card link="open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
+{{< card link="open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
+{{< card link="open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
+{{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
 {{< /cards >}}
 
 ### Sondertabellen
@@ -81,9 +80,11 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< /cards >}}
 
 ## Blitzturnier
+
 {{< callout type="info" >}}
- Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachgetragen. Am 01.11.2025, im Verlauf der fünften Runde des Opens, werden die Tabellen aktualisiert. Bitte nutzen Sie während des Turniers den externen Dienst [chess-results.com](https://chess-results.com/tnr1059056.aspx?lan=0) für aktuelle Informationen.
+Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachgetragen. Am 01.11.2025, im Verlauf der fünften Runde des Opens, werden die Tabellen aktualisiert. Bitte nutzen Sie während des Turniers den externen Dienst [chess-results.com](https://chess-results.com/tnr1059056.aspx?lan=0) für aktuelle Informationen.
 {{< /callout >}}
+
 ### Wichtige Informationen
 
 {{< cards >}}
@@ -126,4 +127,3 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="blitz/rangliste/11" title="Rangliste nach Runde 11" icon="user" >}}
 {{< card link="blitz/rangliste/12" title="Rangliste nach Runde 12" icon="user" >}}
 {{< /cards >}}
-
