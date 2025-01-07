@@ -68,13 +68,13 @@ Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
 
 ## Sondergruppen
 {{< cards >}}
-{{< card link="open/gruppen/u18" title="U18" icon="user" >}}
-{{< card link="open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
-{{< card link="open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
-{{< card link="open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
-{{< card link="open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
-{{< card link="open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
-{{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
+{{< card link="2025/open/gruppen/u18" title="U18" icon="user" >}}
+{{< card link="2025/open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
+{{< card link="2025/open/gruppen/u1800" title="U1800 DWZ" icon="user" >}}
+{{< card link="2025/open/gruppen/u1600" title="U1600 DWZ" icon="user" >}}
+{{< card link="2025/open/gruppen/u1400" title="U1400 DWZ" icon="user" >}}
+{{< card link="2025/open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
+{{< card link="2025/open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
 {{< /cards >}}
 
 
