@@ -27,13 +27,17 @@ languages:
 menu:
   main:
     - name: Anmeldung
-      pageRef: "anmeldung"
+      pageRef: "/2025/anmeldung"
       weight: 1
-    - name: Archiv
+    - name: Ausschreibung
+      pageRef: "/2025/ausschreibung"
       weight: 1
-        - name: 2024
-        url: "/2024"
-        weight: 1
+    - name: Runden
+      pageRef: "/2025/runden"
+      weight: 1
+    - name: Ranglisten
+      pageRef: "/2025/ranglisten"
+      weight: 1
     - name: Datenschutzerklärung
       pageRef: datenschutz
       weight: 3
