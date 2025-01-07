@@ -31,7 +31,7 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 
 {{< cards >}}
 {{< card link="ausschreibung" title="Ausschreibung" icon="user" >}}
-{{< card link="open/startrangliste" title="Startrangliste" icon="user" >}}
+{{< card link="startrangliste" title="Startrangliste" icon="user" >}}
 {{< card link="anmeldung" title="Anmeldung" icon="user" target="_blank">}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< /cards >}}
@@ -72,11 +72,11 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
 {{< /cards >}}
 
-### Sondertabellen
+### Auswertung
 
 {{< cards >}}
-{{< card link="open/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="open/spezial/elo" title="ELO Auswertung" icon="user" >}}
+{{< card link="open/auswertung/dwz" title="DWZ Auswertung" icon="user" >}}
+{{< card link="open/auswertung/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}
 
 ## Blitzturnier
@@ -90,7 +90,7 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 {{< cards >}}
 {{< card link="ausschreibung" title="Ausschreibung" icon="user" >}}
 {{< card link="blitz/startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="download/pdf" title="Downloads" icon="user" target="_blank">}}
+{{< card link="tabellen/" title="Download" icon="user" target="_blank">}}
 {{< /cards >}}
 
 ### Paarungen aller Runden
