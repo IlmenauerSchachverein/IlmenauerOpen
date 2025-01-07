@@ -2,6 +2,7 @@
 title: Ranglisten
 toc: false
 type: docs
+weight: 1
 ---
 
 {{< cards >}}
