@@ -1,6 +1,4 @@
 <?php
-// STYLE (bleibt unverändert)
-echo '<style>/* Styles aus deinem Code bleiben */</style>';
 $error = false;
 
 // Überprüfung, ob POST-Request gesendet wurde
