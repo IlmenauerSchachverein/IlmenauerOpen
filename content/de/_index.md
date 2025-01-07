@@ -65,7 +65,6 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< cards >}}
 {{< card link="2025/open/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
 {{< card link="2025/open/spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< card link="2025/open/spezial/progress" title="Fortschrittstabelle" icon="user" >}}
 {{< /cards >}}
 
 ## Blitzturnier
@@ -123,5 +122,4 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 {{< cards >}}
 {{< card link="2025/blitz/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
 {{< card link="2025/blitz/spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< card link="2025/blitz/spezial/Fortschrittstabelle" title="Fortschrittstabelle" icon="user" >}}
 {{< /cards >}}

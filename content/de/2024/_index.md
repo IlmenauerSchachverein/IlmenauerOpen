@@ -91,5 +91,4 @@ Schachbegeisterung. Viel Spaß beim Ilmenauer Open 2024!
 {{< cards >}}
 {{< card link="blitz/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
 {{< card link="blitz/spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< card link="blitz/spezial/Fortschrittstabelle" title="Fortschrittstabelle" icon="user" >}}
 {{< /cards >}}
