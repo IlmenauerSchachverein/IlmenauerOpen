@@ -118,9 +118,9 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 
 {{< /cards >}}
 
-### Sondertabellen
+### Auswertung
 
 {{< cards >}}
-{{< card link="blitz/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="blitz/spezial/elo" title="ELO Auswertung" icon="user" >}}
+{{< card link="auswertung/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
+{{< card link="auswertung/spezial/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}

@@ -117,9 +117,9 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 
 {{< /cards >}}
 
-### Sondertabellen
+### Auswertung
 
 {{< cards >}}
-{{< card link="2025/blitz/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="2025/blitz/spezial/elo" title="ELO Auswertung" icon="user" >}}
+{{< card link="2025/blitz/auswertung/dwz" title="DWZ Auswertung" icon="user" >}}
+{{< card link="2025/blitz/auswertung/elo" title="ELO Auswertung" icon="user" >}}
 {{< /cards >}}

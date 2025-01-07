@@ -1,5 +1,5 @@
 ---
-title: Spezialtabellen
+title: Auswertung
 toc: false
 type: docs
 ---
