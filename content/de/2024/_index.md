@@ -60,8 +60,6 @@ Schachbegeisterung. Viel Spaß beim Ilmenauer Open 2024!
 {{< cards >}}
 {{< card link="ausschreibung" title="Ausschreibung" icon="user" >}}
 {{< card link="blitz/startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="download/pdf" title="Downloads" icon="user" target="_blank">}}
-{{< card link="download/bilder" title="Bilder" icon="user" target="_blank">}}
 {{< /cards >}}
 
 ### Paarungen aller Runden
