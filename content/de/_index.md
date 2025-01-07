@@ -31,7 +31,7 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 
 {{< cards >}}
 {{< card link="2025/ausschreibung" title="Ausschreibung" icon="user" >}}
-{{< card link="2025/open/startrangliste" title="Startrangliste" icon="user" >}}
+{{< card link="2025/startrangliste" title="Startrangliste" icon="user" >}}
 {{< card link="2025/anmeldung" title="Anmeldung" icon="user" target="_blank">}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< /cards >}}
@@ -60,13 +60,12 @@ Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie üb
 {{< card link="2025/open/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
-
 {{< callout type="info" >}}
 Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
 {{< /callout >}}
 
-
 ## Sondergruppen
+
 {{< cards >}}
 {{< card link="2025/open/gruppen/u18" title="U18" icon="user" >}}
 {{< card link="2025/open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
@@ -76,7 +75,6 @@ Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
 {{< card link="2025/open/gruppen/u1200" title="U1200 DWZ" icon="user" >}}
 {{< card link="2025/open/gruppen/ilmenauer" title="bester Ilmenauer" icon="user" >}}
 {{< /cards >}}
-
 
 ### Auswertung
 
