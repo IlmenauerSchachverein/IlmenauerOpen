@@ -132,10 +132,3 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 {{< card link="2025/blitz/rangliste/12" title="Rangliste nach Runde 12" icon="user" >}}
 
 {{< /cards >}}
-
-### Auswertung
-
-{{< cards >}}
-{{< card link="2025/blitz/auswertung/dwz" title="DWZ Auswertung" icon="user" >}}
-{{< card link="2025/blitz/auswertung/elo" title="ELO Auswertung" icon="user" >}}
-{{< /cards >}}
