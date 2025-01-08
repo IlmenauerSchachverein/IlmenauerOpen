@@ -84,7 +84,7 @@
         <th>Geburtsdatum</th>
         <th>Handynummer</th>
         <th>E-Mail</th>
-        <th>Rabattberechtigung</th>
+        <th>Rabatt</th>
         <th>Bestätigung</th>
         <th>AGB</th>
         <th>Blitzturnier</th>
