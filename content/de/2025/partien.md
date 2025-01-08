@@ -12,7 +12,7 @@ Die PGN Dateien können unter [Partien](/2025/tabellen) heruntergeladen werden.
 Wir sind uns bewusst, dass der Lichess-Broadcast im IFrame nicht optimal dargestellt wird. Für kleinere Endgeräte empfehlen wir, den direkten Link zu nutzen und die Übertragung direkt auf der Lichess-Website anzusehen.
 {{< /callout >}}
 
-- Lichess Broadcast: [https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf](https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf)
+- Lichess Broadcast: [https://lichess.org/broadcast/2-ilmenauer-open-2025/round-1/AW7mRvQ2](https://lichess.org/broadcast/2-ilmenauer-open-2025/round-1/AW7mRvQ2)
 
 <iframe src="https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf" style="width: 100%; aspect-ratio: 4/3;" frameborder="0"></iframe>
 
