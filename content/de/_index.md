@@ -92,9 +92,8 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 ### Wichtige Informationen
 
 {{< cards >}}
-{{< card link="2025/ausschreibung" title="Ausschreibung" icon="user" >}}
+{{< card link="2025/ausschreibung_blitz" title="Ausschreibung" icon="user" >}}
 {{< card link="2025/blitz/startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="2025/download/pdf" title="Downloads" icon="user" target="_blank">}}
 {{< /cards >}}
 
 ### Paarungen aller Runden

@@ -88,9 +88,8 @@ Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachg
 ### Wichtige Informationen
 
 {{< cards >}}
-{{< card link="ausschreibung" title="Ausschreibung" icon="user" >}}
+{{< card link="ausschreibung_blitz" title="Ausschreibung" icon="user" >}}
 {{< card link="blitz/startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="tabellen/" title="Download" icon="user" target="_blank">}}
 {{< /cards >}}
 
 ### Paarungen aller Runden
