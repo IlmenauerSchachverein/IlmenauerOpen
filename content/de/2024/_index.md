@@ -50,7 +50,6 @@ Schachbegeisterung. Viel Spaß beim Ilmenauer Open 2024!
 {{< cards >}}
 {{< card link="open/spezial/dwz" title="DWZ Auswertung" icon="user" >}}
 {{< card link="open/spezial/elo" title="ELO Auswertung" icon="user" >}}
-{{< card link="open/spezial/progress" title="Fortschrittstabelle" icon="user" >}}
 {{< /cards >}}
 
 ## Blitzturnier

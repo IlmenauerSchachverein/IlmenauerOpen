@@ -15,19 +15,6 @@ Das Orgateam macht das Turnier Ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 - Stand: 08.01.2025 04:23
 
-
-
-| TlnNr | Teilnehmer          | TWZ  | Attr. | Verein/Ort                    | Land | Geburt |
-|-------|----------------------|------|-------|-------------------------------|------|--------|
-| 1     | Eichenauer, Pascal   | 2062 | M     | SV Würzburg von 1865 e.V.     | GER  | 1999   |
-| 2     | Handschuh, Franz     | 1780 | M     | SV Stützerbach                | GER  | 1948   |
-| 3     | Eisenbach, Markus    | 1505 | M     | Ilmenauer SV                  | GER  | 1984   |
-
-
-
-
-
-
 | TlnNr | Teilnehmer          | ELO  | NWZ  | Attr. | Verein/Ort                 | Land | Geburt | FideKenn. | PKZ       |
 |-------|----------------------|------|------|-------|----------------------------|------|--------|-----------|-----------|
 | 1     | Eichenauer, Pascal   | 2029 | 2062 | M     | SV Würzburg von 1865 e.V.  | GER  | 1999   | 12991848  | 10276112  |
