@@ -16,8 +16,8 @@ sudo apt install hugo
 ```
 
 #### Mehr Informationen
-    - Hugo Anleitung: [https://gohugo.io/installation/](https://gohugo.io/installation/)
-    - Github Repo: [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
+- Hugo Anleitung: [https://gohugo.io/installation/](https://gohugo.io/installation/)
+- Github Repo: [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
 
 ### Git clonen
 Bitte clonen Sie das Git nur mit der ``--recurse-submodules`` Flag
