@@ -1,12 +1,40 @@
 
 # 2. Ilmenauer Open 2025
 
+## System
+### Hugo 
+Es ist wichtig, dass die Hugo Extend Version installiert ist. Es ist mindestens die Version ``v0.140.0`` benötigt. 
+- Windows:
+```powershell
+winget install Hugo.Hugo.Extended
+```
+- Linux
+```bash
+sudo apt install hugo
+```
 
-## Git clonen
+- Hugo Anleitung: [https://gohugo.io/installation/](https://gohugo.io/installation/)
+- Github Repo: [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
+
+### Git clonen
 Bitte clonen Sie das Git nur mit der ``--recurse-submodules`` Flag
 ```bash
 git clone --recurse-submodules https://github.com/IlmenauerSchachverein/IlmenauerOpen.git
 ```
+### Builden
+Das Theme benötigt 2 Hugo Abhänigkeiten. Diese können Sie mit 
+```bash
+hugo mod get # Herunterladen der Abhaenigkeiten
+hugo mod tidy # Raeumt etwas auf (optional)
+hugo --cleanDestinationDir # Builden des Projektes
+```
+installieren. Die Flag ``--cleanDestinationDir`` stellt sicher, dass keine Altlasten vorhanden sind.  
+
+### HTML Dateien 
+Das fertige Projekt liegt dann im Ordner ``public``. 
+
+### Hugo Server
+Mit dem Command ``hugo server`` kann ein temporärer Server erstellt werden. Dieser ist unter ``http://localhost:1313/ `` erreichbar.
 
 ## Datum
 
