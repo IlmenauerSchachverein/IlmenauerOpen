@@ -1,4 +1,12 @@
+
 # 2. Ilmenauer Open 2025
+
+
+## Git clonen
+Bitte clonen Sie das Git nur mit der ``--recurse-submodules`` Flag
+```bash
+git clone --recurse-submodules https://github.com/IlmenauerSchachverein/IlmenauerOpen.git
+```
 
 ## Datum
 
