@@ -127,3 +127,6 @@ Das 2. Ilmenauer Open 2025 und das 2. Ilmenauer Open Blitz 2025 sind Turniere, d
 
 - E-Mail: [info@ilmenauer-schachverein.de](mailto:info@ilmenauer-schachverein.de)
 - Adresse: Ehrenbergstraße 29, 98693 Ilmenau
+
+
+# Farewell
