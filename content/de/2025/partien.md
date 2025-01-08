@@ -8,6 +8,3 @@ type: docs
 
 
 
-
-## Dummy
-<iframe src="https://lichess.org/embed/broadcast/2025-australian-open--minor/4K8Ixnjp" style="width: 100%; aspect-ratio: 4/3;" frameborder="0"></iframe>
