@@ -49,7 +49,7 @@
     }
 
     // Chess-Results-Daten abrufen
-    $chessResultsUrl = 'https://chess-results.com/tnr1056111.aspx?lan=0';
+    $chessResultsUrl = 'https://chess-results.com/tnr1056124.aspx?lan=0';
     $html = file_get_contents($chessResultsUrl);
 
     if ($html === FALSE) {
