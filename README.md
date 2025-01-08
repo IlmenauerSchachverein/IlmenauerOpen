@@ -3,7 +3,9 @@
 
 ## System
 ### Hugo 
-Es ist wichtig, dass die Hugo Extend Version installiert ist. Es ist mindestens die Version ``v0.140.0`` benötigt. 
+Es ist wichtig, dass die Hugo Extend Version installiert ist. Es ist mindestens die Version ``v0.140.0`` benötigt.
+
+#### Allgemein
 - Windows:
 ```powershell
 winget install Hugo.Hugo.Extended
@@ -13,8 +15,9 @@ winget install Hugo.Hugo.Extended
 sudo apt install hugo
 ```
 
-- Hugo Anleitung: [https://gohugo.io/installation/](https://gohugo.io/installation/)
-- Github Repo: [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
+#### Mehr Informationen
+    - Hugo Anleitung: [https://gohugo.io/installation/](https://gohugo.io/installation/)
+    - Github Repo: [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
 
 ### Git clonen
 Bitte clonen Sie das Git nur mit der ``--recurse-submodules`` Flag
