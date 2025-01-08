@@ -8,6 +8,9 @@ Die PGN Dateien können unter [Partien](/2025/tabellen) heruntergeladen werden.
 {{< /callout >}}
 
 ## DGT Livestream
+{{< callout type="warning" >}}
+Wir sind uns bewusst, dass der Lichess-Broadcast im IFrame nicht optimal dargestellt wird. Für kleinere Endgeräte empfehlen wir, den direkten Link zu nutzen und die Übertragung direkt auf der Lichess-Website anzusehen.
+{{< /callout >}}
 
 - Lichess Broadcast: [https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf](https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf)
 
