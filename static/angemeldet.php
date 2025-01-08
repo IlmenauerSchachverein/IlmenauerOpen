@@ -68,7 +68,7 @@
             if ($index === 0) continue; // Header-Zeile überspringen
             $cells = $row->getElementsByTagName('td');
             if ($cells->length >= 4) {
-                $webNames[] = trim($cells->item(3)->nodeValue); // Spielername aus der vierten Zelle
+                $webNames[] = trim($cells->item(2)->nodeValue); // Spielername aus der vierten Zelle
             }
         }
     }
