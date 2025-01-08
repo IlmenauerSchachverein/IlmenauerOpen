@@ -1,5 +1,5 @@
 ---
-title: Tabellen - PDF
+title: Tabellen und anderes
 type: docs
 toc: false
 ---
