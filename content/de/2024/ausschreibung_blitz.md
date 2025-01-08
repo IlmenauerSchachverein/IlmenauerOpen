@@ -5,8 +5,8 @@ toc: false
 ---
 
 {{< cards >}}
-{{< card link="../runde" title="Runde" >}}
-{{< card link="../rangliste" title="Rangliste"  >}}
+{{< card link="/2024/blitz/runde" title="Runde" >}}
+{{< card link="/2024/blitz/rangliste" title="Rangliste"  >}}
 {{< card link="https://chess-results.com/tnr824805.aspx" title="Chess-Results"  >}}
 
 {{< /cards >}}
