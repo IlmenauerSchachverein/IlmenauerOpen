@@ -102,9 +102,8 @@ In den DWZ-Kategorien und beim Heldenpokal werden ausschließlich Teilnehmer ber
 
 Für die Preisvergabe gilt: Als U18 werden alle Teilnehmer gewertet, die Jahrgang 2006 oder jünger sind.
 
-<!-- ## Anmeldung Formular
+## Anmeldung Formular
 
-<iframe src="https://open24.ilmenauer-schachverein.de/Registrierung/open2024/" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
+<iframe src="https://open.ilmenauer-schachverein.de/Registrierung/open2024/" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
 <br>
 
--->
