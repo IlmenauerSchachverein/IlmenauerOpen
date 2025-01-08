@@ -35,3 +35,7 @@ Die Dateien werden erst nach dem Turnier zur Verfügung gestellt.
 {{< /cards >}}
 
 ## Download der PGN Dateien
+{{< cards >}}
+  {{< card link="/2025/partien/isv_open25.pgn" title="PGN Datei Open" icon="user"  target="_blank" >}}
+  {{< card link="/2025/partien/isv_blitz25.pgn" title="PGN Datei Blitz" icon="user" target="_blank" >}}
+{{< /cards >}}
