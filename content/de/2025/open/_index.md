@@ -39,6 +39,10 @@ type: docs
 {{< /cards >}}
 
 ## Sondergruppen
+{{< callout type="info" >}}
+Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
+{{< /callout >}}
+
 {{< cards >}}
   {{< card link="gruppen/u18" title="U18" icon="user" >}}
   {{< card link="gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
