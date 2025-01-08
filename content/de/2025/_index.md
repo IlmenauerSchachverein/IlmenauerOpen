@@ -24,6 +24,9 @@ type: docs
 Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie über das Menü oder direkt  [im Archiv](../2024/) einsehen.
 
 {{< /callout >}}
+{{< callout type="info" >}}
+Die DGT Bretter finden Sie unter [Partien](/2025/partien). Dort können Sie auch die PGN Dateien herunterladen.
+{{< /callout >}}
 
 ## Open
 
