@@ -8,7 +8,7 @@ toc: false
 Dies ist eine Auswahl der verfügbaren Tabellen. Sollten Sie weitere Tabellen benötigen, kontaktieren Sie uns gerne per E-Mail unter [info@ilmenauer-schachverein.de](mailto:info@ilmenauer-schachverein.de).
 {{< /callout >}}
 
-{{< callout type="info" >}}
+{{< callout type="error" >}}
 Die Dateien werden erst nach dem Turnier zur Verfügung gestellt.
 {{< /callout >}}
 
