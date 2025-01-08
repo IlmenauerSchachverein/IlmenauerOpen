@@ -1,6 +1,12 @@
 ---
 title: "test"
 ---
+---
+{{< callout type="error" >}}
+Dieser Test ist nur vorübergehend verfügbar und dient ausschließlich Demonstrationszwecken.
+{{< /callout >}}
+
+
 {{< callout type="info" >}}
 Bitte runterscrollen :)
 {{< /callout >}}
