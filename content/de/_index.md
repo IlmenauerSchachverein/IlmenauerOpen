@@ -64,11 +64,11 @@ Die DGT Bretter finden Sie unter [Partien](/2025/partien). Dort können Sie auch
 {{< card link="2025/open/rangliste/7" title="Rangliste nach Runde 7" icon="user" >}}
 {{< /cards >}}
 
+## Sondergruppen
+
 {{< callout type="info" >}}
 Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
 {{< /callout >}}
-
-## Sondergruppen
 
 {{< cards >}}
 {{< card link="2025/open/gruppen/u18" title="U18" icon="user" >}}
