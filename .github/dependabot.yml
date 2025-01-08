@@ -6,17 +6,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "github-actions" 
-    directory: "/" 
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "daily"
-  
-  - package-ecosystem: "gitsubmodule" 
-    directory: "/" 
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "gomod" 
-    directory: "/" 
+
+  - package-ecosystem: "gomod"
+    directory: "/"
     schedule:
       interval: "daily"
