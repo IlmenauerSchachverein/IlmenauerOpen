@@ -1,6 +1,10 @@
 ---
 title: "test"
 ---
+{{< callout type="info" >}}
+Bitte runterscrollen :)
+{{< /callout >}}
+
 
 ## Das ist nur ein Test für die DGT Bretter.
 <iframe src="https://lichess.org/embed/broadcast/2-ilmenauer-open-2025/7frTyKOf" style="width: 100%; aspect-ratio: 4/3;" frameborder="0"></iframe>
