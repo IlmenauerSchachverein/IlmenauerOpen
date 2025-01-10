@@ -37,7 +37,7 @@ jobs:
         run: |
           hugo mod get
           hugo mod tidy
-          hugo
+          hugo --verbose --minify --cleanDestinationDir
 
       - name: Deploy files via SSH
         uses: appleboy/scp-action@v0.1.7
