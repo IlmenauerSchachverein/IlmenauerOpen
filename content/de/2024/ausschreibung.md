@@ -88,5 +88,5 @@ Das 1. Ilmenauer Open 2024 und das 1. Ilmenauer Open Blitz 2024 sind Turniere, d
 
 ## Anmeldung Formular
 
-<iframe src="https://open24.ilmenauer-schachverein.de/Registrierung/open2024/" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
+<iframe src="https://open.ilmenauer-schachverein.de/anmeldung/" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
 <br>

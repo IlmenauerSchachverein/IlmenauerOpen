@@ -3,7 +3,7 @@
 {{ range .Pages }}
   <url>
     <loc>{{ .Permalink }}</loc>
-    <changefreq>{{ .Params.changefreq | default "weekly" }}</changefreq>
+    <changefreq>{{ .Params.changefreq | default "daily" }}</changefreq>
     <priority>{{ .Params.priority | default 0.5 }}</priority>
   </url>
 {{ end }}

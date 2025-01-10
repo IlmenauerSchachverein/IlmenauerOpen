@@ -1,4 +1,4 @@
----
+    ---
 title: Ausschreibung - Open
 type: docs
 toc: false
@@ -104,6 +104,6 @@ Für die Preisvergabe gilt: Als U18 werden alle Teilnehmer gewertet, die Jahrgan
 
 ## Anmeldung Formular
 
-<iframe src="https://open.ilmenauer-schachverein.de/Registrierung/open2024/" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
+<iframe src="https://open.ilmenauer-schachverein.de/register/submit.php" width="100%" height="2000px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
 <br>
 
