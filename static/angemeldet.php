@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldungen Open 2025</title>
+    <style>
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        .highlight {
+            background-color: #ffcccc; /* Hellrot für Übereinstimmungen */
+        }
+    </style>
+</head>
+<body>
 <?php
 // Pfad zur CSV-Datei
 $csvFile = '/var/private/isv/open25.csv';
@@ -115,3 +153,5 @@ if (!empty($notInCsv)) {
     echo '<p>Alle gemeldeten Spieler sind auch in der CSV-Datei vorhanden.</p>';
 }
 ?>
+</body>
+</html>
