@@ -102,3 +102,4 @@ defaultContentLanguage = "de"
   changefreq = "daily"   # Gibt an, wie oft die Inhalte geändert werden (z. B. "daily", "weekly", "monthly").
   priority = 0.5         # Gibt die Wichtigkeit der Seiten an (0.0 bis 1.0).
   filename = "sitemap.xml" # Name der Sitemap-Datei.
+enableGitInfo = true
