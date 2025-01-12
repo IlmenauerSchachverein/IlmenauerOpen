@@ -1,6 +1,7 @@
 title = "2. Ilmenauer Open 2024"
 baseURL = "https://open.ilmenauer-schachverein.de"
 defaultContentLanguage = "de"
+enableGitInfo = true
 
 [module]
   [[module.imports]]
@@ -41,8 +42,8 @@ defaultContentLanguage = "de"
     pageRef = "/2025/open/runden"
     weight = 1
   [[menu.main]]
-    name = "Ranglisten"
-    pageRef = "/2025/open/ranglisten"
+    name = "Startrangliste"
+    pageRef = "/2025/startrangliste"
     weight = 1
   [[menu.main]]
     name = "Datenschutzerklärung"
@@ -102,4 +103,4 @@ defaultContentLanguage = "de"
   changefreq = "daily"   # Gibt an, wie oft die Inhalte geändert werden (z. B. "daily", "weekly", "monthly").
   priority = 0.5         # Gibt die Wichtigkeit der Seiten an (0.0 bis 1.0).
   filename = "sitemap.xml" # Name der Sitemap-Datei.
-enableGitInfo = true
+
