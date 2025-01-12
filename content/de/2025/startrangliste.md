@@ -14,12 +14,12 @@ Das Orgateam macht das Turnier Ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 - Stand: 12.01.2025 01:59 / Commit Zeit: {{ .GitInfo.AuthorDate }}
 
-| TlnNr | Teilnehmer          | Titel | ELO  | NWZ  | Attr. | Verein/Ort                | Land | Geburt | FideKenn. | PKZ      |
-| ----- | ------------------- | ----- | ---- | ---- | ----- | ------------------------- | ---- | ------ | --------- | -------- |
-| 1     | Eichenauer, Pascal  |       | 2029 | 2062 | M     | SV Würzburg von 1865 e.V. | GER  | 1999   | 12991848  | 10276112 |
-| 2     | Aniol, Nico         |       | 1980 | 1983 | M     | VfL 1990 Gera             | GER  | 2010   | 16287096  | 10695221 |
-| 3     | Aniol, Adrian       |       | 1892 | 1960 | M     | VfL 1990 Gera             | GER  | 2005   | 16229967  | 10406227 |
-| 4     | Handschuh, Franz    |       | 1788 | 1780 | M     | SV Stützerbach            | GER  | 1948   | 34602615  | 10073513 |
-| 5     | Ellerbrock, Manfred |       | 1883 | 1763 | M     | SV Rochade Neuenstadt     | GER  | 1948   | 4641850   | 10044061 |
-| 6     | Eisenbach, Markus   |       | 1888 | 1505 | M     | Ilmenauer SV              | GER  | 1984   | 34663630  | 10043553 |
-| 7     | Winger, Frank       |       |      | 832  | M     | Ilmenauer SV              | GER  | 1964   | 16233069  | 10651767 |
+| TlnNr | Teilnehmer          | ELO  | NWZ  | Verein/Ort                | Land | Geburt |
+| ----- | ------------------- | ---- | ---- | ------------------------- | ---- | ------ |
+| 1     | Eichenauer, Pascal  | 2029 | 2062 | SV Würzburg von 1865 e.V. | GER  | 1999   |
+| 2     | Aniol, Nico         | 1980 | 1983 | VfL 1990 Gera             | GER  | 2010   |
+| 3     | Aniol, Adrian       | 1892 | 1960 | VfL 1990 Gera             | GER  | 2005   |
+| 4     | Handschuh, Franz    | 1788 | 1780 | SV Stützerbach            | GER  | 1948   |
+| 5     | Ellerbrock, Manfred | 1883 | 1763 | SV Rochade Neuenstadt     | GER  | 1948   |
+| 6     | Eisenbach, Markus   | 1888 | 1505 | Ilmenauer SV              | GER  | 1984   |
+| 7     | Winger, Frank       |      | 832  | Ilmenauer SV              | GER  | 1964   |
