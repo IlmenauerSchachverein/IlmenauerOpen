@@ -14,7 +14,7 @@ Das Orgateam macht das Turnier Ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 - Stand: 12.01.2025 01:59
 
-{{< commit-info >}}
+- {{< commit-info >}}
 
 
 | TlnNr | Teilnehmer          | ELO  | NWZ  | Verein/Ort                | Land | Geburt |
