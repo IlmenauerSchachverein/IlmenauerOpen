@@ -12,7 +12,12 @@ Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) v
 Das Orgateam macht das Turnier Ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage dauern bis ihr Name in der Liste erscheint. Haben sie bitte etwas Gedult. Sollte ihr Name nach einer Woche noch nicht erschienen sein, können sie uns gerne unter [info@ilmenauer-schachverein.de](mailto:info@ilmenauer-schachverein.de) eine E-Mail schreiben. Eine individuelle Antwort per E-Mail als Anmeldebestätigung gibt es aus zeitgründen nicht.
 {{< /callout >}}
 
-- Stand: 12.01.2025 01:59 / Commit Zeit: {{ .GitInfo.AuthorDate }}
+- Stand: 12.01.2025 01:59
+{{ with .GitInfo }}
+- Commit Zeit: {{ .AuthorDate }}
+{{ else }}
+- GitInfo nicht verfügbar
+{{ end }}
 
 | TlnNr | Teilnehmer          | ELO  | NWZ  | Verein/Ort                | Land | Geburt |
 | ----- | ------------------- | ---- | ---- | ------------------------- | ---- | ------ |
