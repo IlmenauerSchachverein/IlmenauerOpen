@@ -1,0 +1,5 @@
+{{ with .Page.GitInfo }}
+<p>Commit Zeit: {{ .AuthorDate }}</p>
+{{ else }}
+<p>GitInfo nicht verfügbar</p>
+{{ end }}

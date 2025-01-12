@@ -14,12 +14,8 @@ Das Orgateam macht das Turnier Ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 - Stand: 12.01.2025 01:59
 
+{{< commit-info >}}
 
-{{ with .GitInfo }}
- Commit Zeit: {{ .AuthorDate }}
-{{ else }}
-GitInfo nicht verfügbar
-{{ end }}
 
 | TlnNr | Teilnehmer          | ELO  | NWZ  | Verein/Ort                | Land | Geburt |
 | ----- | ------------------- | ---- | ---- | ------------------------- | ---- | ------ |
