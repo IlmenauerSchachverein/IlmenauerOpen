@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anmeldungen Open 2025</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4QPZR8HZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H4QPZR8HZY');
+    </script>
     <style>
         table {
             width: 90%;
