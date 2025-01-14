@@ -28,7 +28,8 @@
             background-color: #f9f9f9;
         }
         tr:hover {
-            background-color: #e9e9e9;
+            background-color:rgb(15, 14, 14);
+            font: white;
         }
         .highlight {
             background-color:rgb(212, 206, 206); /* Hellgrau fuer Uerberinstimmung */
