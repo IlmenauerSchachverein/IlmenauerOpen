@@ -31,7 +31,7 @@
             background-color: #e9e9e9;
         }
         .highlight {
-            background-color: #ffcccc; /* Hellrot für Übereinstimmungen */
+            background-color:rgb(212, 206, 206); /* Hellgrau fuer Uerberinstimmung */
         }
     </style>
 </head>
