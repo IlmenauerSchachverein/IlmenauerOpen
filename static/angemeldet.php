@@ -28,11 +28,11 @@
             background-color: #f9f9f9;
         }
         tr:hover {
-            background-color:rgb(15, 14, 14);
-            font: white;
+            background-color:rgba(151, 255, 176, 0.8)
+            
         }
         .highlight {
-            background-color:rgb(212, 206, 206); /* Hellgrau fuer Uerberinstimmung */
+            background-color:rgb(154, 159, 228); /* Hellgrau fuer Uerberinstimmung */
         }
     </style>
 </head>
