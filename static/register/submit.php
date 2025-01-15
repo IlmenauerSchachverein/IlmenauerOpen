@@ -1,6 +1,5 @@
 <?php
 $error = false;
-echo "<h3>Debugging-Informationen:</h3>";
 // Überprüfung, ob POST-Request gesendet wurde
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $vorname = htmlspecialchars($_POST['vorname']);

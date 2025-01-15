@@ -3,6 +3,10 @@ title: Anmeldung - Open
 type: docs
 toc: false
 ---
+{{< callout type="error" >}}
+  Aktuell gibt es technische Probleme im Backend. Wir bitten, dass Sie sich etwas gedulden. 
+  
+{{< /callout >}}
 
 Wir freuen uns sehr, dass Sie sich anmelden wollen.
 
