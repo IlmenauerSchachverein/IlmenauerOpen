@@ -85,7 +85,7 @@ vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
 - Geburtsdatum: {geburtsdatum}
 - Telefonnummer: {telefonnummer}
 - FIDE-ID: {fide_id}
-- Rabatt: {rabatt}
+- Rabatt: {rabatt} 
 - Bestätigung: {bestaetigung}
 - AGB akzeptiert: {agb}
 - Teilnahme am Blitzturnier: {blitzturnier}
