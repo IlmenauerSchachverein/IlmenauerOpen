@@ -1,7 +1,27 @@
+import os
+from dotenv import load_dotenv
 import sys
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+
+# .env-Datei laden
+load_dotenv("/var/www/open/register/.env")  # Pfad zur .env-Datei anpassen
+
+# Aus Umgebungsvariablen lesen
+SMTP_SERVER = os.getenv("SMTP_SERVER")
+SMTP_PORT = os.getenv("SMTP_PORT")
+SMTP_USER = os.getenv("SMTP_USER")
+SMTP_PASS = os.getenv("SMTP_PASS")
+
+# Debugging: Zeige die geladenen Umgebungsvariablen
+print(f"""
+Geladene Umgebungsvariablen:
+- SMTP_SERVER: {SMTP_SERVER}
+- SMTP_PORT: {SMTP_PORT}
+- SMTP_USER: {SMTP_USER}
+- SMTP_PASS: {SMTP_PASS[:2]}*** (aus Sicherheitsgründen gekürzt)
+""")
 
 # Debugging: Zeige die übergebenen Argumente an
 print(f"Erhaltene Argumente: {sys.argv}")
@@ -41,60 +61,3 @@ Bestätigung: {bestaetigung}
 AGB: {agb}
 Blitzturnier: {blitzturnier}
 """)
-
-# SMTP-Konfiguration
-SMTP_SERVER = "smtp.mailbox.org"
-SMTP_PORT = 587
-SMTP_USER = "ilmenauer.open@ilmenauersv.de"  # Benutzername
-SMTP_PASS = "dein_passwort"  # Passwort
-
-# Funktion zum Senden der E-Mail
-def send_email(to_email, vorname, nachname, verein, geburtsdatum, telefonnummer, fide_id, rabatt, bestaetigung, agb, blitzturnier):
-    from_email = "info@ilmenauer-schachverein.de"
-    subject = "Anmeldebestätigung"
-    
-    # E-Mail-Inhalt
-    message = f"""
-Hallo {vorname} {nachname},
-
-vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
-
-- Verein: {verein}
-- Geburtsdatum: {geburtsdatum}
-- Telefonnummer: {telefonnummer}
-- FIDE-ID: {fide_id}
-- Rabatt: {rabatt}
-- Bestätigung: {bestaetigung}
-- AGB akzeptiert: {agb}
-- Teilnahme am Blitzturnier: {blitzturnier}
-
-Bitte überprüfen Sie Ihre Angaben. Falls etwas nicht stimmt, kontaktieren Sie uns.
-
-Mit freundlichen Grüßen,
-Ihr Team
-"""
-
-    # E-Mail erstellen
-    msg = MIMEMultipart()
-    msg['From'] = from_email
-    msg['To'] = to_email
-    msg['Subject'] = subject
-    msg.attach(MIMEText(message, 'plain'))
-
-    # Verbindung zum SMTP-Server herstellen und E-Mail senden
-    try:
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()  # TLS aktivieren
-            server.login(SMTP_USER, SMTP_PASS)
-            server.sendmail(from_email, to_email, msg.as_string())
-        print("E-Mail erfolgreich gesendet!")
-    except Exception as e:
-        print(f"Fehler beim Senden der E-Mail: {e}")
-        sys.exit(1)
-
-# E-Mail senden
-send_email(
-    to_email, vorname, nachname, verein, geburtsdatum,
-    telefonnummer, fide_id, rabatt, bestaetigung, agb, blitzturnier
-)
- 
