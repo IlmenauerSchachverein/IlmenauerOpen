@@ -10,10 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $geburtsdatum = htmlspecialchars($_POST['geburtsdatum']);
     $handy = isset($_POST['handy']) ? htmlspecialchars($_POST['handy']) : 'Nicht angegeben';
     $email = htmlspecialchars($_POST['email']);
-    $rabatt = htmlspecialchars($_POST['rabatt']);
-    $bestaetigung = 'Nein';
-    $agb = '?';
-    $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein'; // Neues Feld
+    $fide_id = isset($_POST['fide_id']) ? htmlspecialchars($_POST['fide_id']) : 'Unbekannt';
 
     // Honeypot-Schutz
     if (!empty($_POST['honeypot'])) {
@@ -40,10 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $geburtsdatum,
             $handy,
             $email,
-            $rabatt,
-            $bestaetigung,
-            $agb,
-            $blitzturnier // Blitzturnier hinzufügen
+            $fide_id // FIDE-ID hinzufügen
         ];
 
         if (($datei = fopen($dateipfad, 'a')) !== FALSE) {
@@ -52,11 +46,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
 
             // Python-Skript ausführen
-            $pythonScript = 'mail.py'; // Pfad zum Python-Skript
+            $pythonScript = '/var/private/isv/mail.py'; // Pfad zum Python-Skript
             $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
 
             // Befehl vorbereiten
-            $command = escapeshellcmd("$pythonPath $pythonScript $email $vorname $nachname \"$verein\" $geburtsdatum $handy");
+            $command = escapeshellcmd("$pythonPath $pythonScript $email $vorname $nachname \"$verein\" $geburtsdatum $handy $fide_id");
 
             // Skript ausführen und Ergebnis prüfen
             $output = [];
