@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Python-Skript ausführen
             $pythonScript = '/var/www/open/register/mail.py'; // Pfad zum Python-Skript
             $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
-
+ 
             // Befehl vorbereiten
             $command = escapeshellcmd("$pythonPath $pythonScript " .
                 escapeshellarg($email) . " " .
