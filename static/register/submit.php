@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein';
     $fide_id = isset($_POST['fide_id']) ? htmlspecialchars($_POST['fide_id']) : '';
 
-    $pythonScript = '/var/www/open/register/mail.py';
-    $pythonPath = '/usr/bin/python3';
+    $pythonScript = '/var/www/open/register/mail.py'; // Pfad zur Python-Datei
+    $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
 
     // Befehl vorbereiten
     $command = escapeshellcmd("$pythonPath $pythonScript " .
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         escapeshellarg($blitzturnier) . " " .
         escapeshellarg($fide_id));
 
-    // Ausführen und sowohl stdout als auch stderr erfassen
+    // Skript ausführen und sowohl stdout als auch stderr erfassen
     $output = [];
     $return_var = 0;
     exec("$command 2>&1", $output, $return_var);

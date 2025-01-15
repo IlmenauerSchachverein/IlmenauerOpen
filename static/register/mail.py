@@ -5,12 +5,12 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# .env-Datei laden (korrekter Pfad)
+# .env-Datei laden
 load_dotenv("/var/private/isv/open.env")
 
-# Aus Umgebungsvariablen lesen
+# SMTP-Konfiguration aus .env-Datei
 SMTP_SERVER = os.getenv("SMTP_SERVER")
-SMTP_PORT = os.getenv("SMTP_PORT")
+SMTP_PORT = int(os.getenv("SMTP_PORT"))
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
 
@@ -20,14 +20,11 @@ Geladene Umgebungsvariablen:
 - SMTP_SERVER: {SMTP_SERVER}
 - SMTP_PORT: {SMTP_PORT}
 - SMTP_USER: {SMTP_USER}
-- SMTP_PASS: {SMTP_PASS[:2]}*** (aus Sicherheitsgründen gekürzt)
+- SMTP_PASS: {SMTP_PASS[:2]}*** (gekürzt)
 """)
 
-# Debugging: Zeige die übergebenen Argumente an
-print(f"Erhaltene Argumente: {sys.argv}")
-
 # Überprüfe, ob genügend Argumente übergeben wurden
-if len(sys.argv) < 8:  # Mindestanzahl der erwarteten Argumente
+if len(sys.argv) < 8:
     print("Fehler: Zu wenige Argumente.")
     print("Verwendung: python mail.py <Empfänger> <Vorname> <Nachname> <Verein> <Geburtsdatum> <Telefonnummer> <FIDE-ID>")
     sys.exit(1)
@@ -41,33 +38,37 @@ geburtsdatum = sys.argv[5]
 telefonnummer = sys.argv[6]
 fide_id = sys.argv[7]
 
-# Optionale Felder verarbeiten (falls mehr als 8 Argumente)
-rabatt = sys.argv[8] if len(sys.argv) > 8 else "Nicht angegeben"
-bestaetigung = sys.argv[9] if len(sys.argv) > 9 else "Nein"
-agb = sys.argv[10] if len(sys.argv) > 10 else "?"
-blitzturnier = sys.argv[11] if len(sys.argv) > 11 else "Nein"
+# E-Mail-Inhalt
+message = f"""
+Hallo {vorname} {nachname},
 
-# Debugging: Zeige die verarbeiteten Daten an
-print(f"""
-Empfänger: {to_email}
-Vorname: {vorname}
-Nachname: {nachname}
-Verein: {verein}
-Geburtsdatum: {geburtsdatum}
-Telefonnummer: {telefonnummer}
-FIDE-ID: {fide_id}
-Rabatt: {rabatt}
-Bestätigung: {bestaetigung}
-AGB: {agb}
-Blitzturnier: {blitzturnier}
-""")
+vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
 
-# SMTP-Konfiguration und E-Mail-Versand
+- Verein: {verein}
+- Geburtsdatum: {geburtsdatum}
+- Telefonnummer: {telefonnummer}
+- FIDE-ID: {fide_id}
+
+Bitte überprüfen Sie Ihre Angaben. Falls etwas nicht stimmt, kontaktieren Sie uns.
+
+Mit freundlichen Grüßen,
+Ihr Team
+"""
+
+# E-Mail erstellen
+msg = MIMEMultipart()
+msg['From'] = SMTP_USER
+msg['To'] = to_email
+msg['Subject'] = "Anmeldebestätigung"
+msg.attach(MIMEText(message, 'plain'))
+
+# Verbindung zum SMTP-Server herstellen und E-Mail senden
 try:
-    with smtplib.SMTP(SMTP_SERVER, int(SMTP_PORT)) as server:
+    with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
         server.starttls()  # TLS aktivieren
         server.login(SMTP_USER, SMTP_PASS)
-        print("SMTP-Authentifizierung erfolgreich!")
+        server.sendmail(SMTP_USER, to_email, msg.as_string())
+    print("E-Mail erfolgreich gesendet!")
 except Exception as e:
-    print(f"Fehler bei der SMTP-Verbindung: {e}")
+    print(f"Fehler beim Senden der E-Mail: {e}")
     sys.exit(1)
