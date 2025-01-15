@@ -50,13 +50,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             fputcsv($datei, $datenzeile);
             fclose($datei);
             echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
+
+            // Python-Skript ausführen
+            $pythonScript = 'mail.py'; // Pfad zum Python-Skript
+            $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
+
+            // Befehl vorbereiten
+            $command = escapeshellcmd("$pythonPath $pythonScript $email $vorname $nachname \"$verein\" $geburtsdatum $handy");
+
+            // Skript ausführen und Ergebnis prüfen
+            $output = [];
+            $return_var = 0;
+            exec($command, $output, $return_var);
+
+            if ($return_var === 0) {
+                echo "<p style='color:green;'>Die E-Mail wurde erfolgreich gesendet.</p>";
+            } else {
+                echo "<p style='color:red;'>Fehler beim Senden der E-Mail.</p>";
+                echo "<pre>" . implode("\n", $output) . "</pre>";
+            }
         } else {
             echo "<p style='color:red;'>Fehler: CSV-Datei konnte nicht geöffnet werden.</p>";
         }
     }
 }
-
-// E-Mail senden
-require '/var/www/sendmail/sendopen/open.php';
-
 ?>
