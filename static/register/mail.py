@@ -1,26 +1,33 @@
 import os
-from dotenv import load_dotenv
 import sys
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# .env-Datei laden
-load_dotenv("/var/private/isv/open.env")
+# Funktion: .env-Datei laden
+def load_env_file(filepath):
+    """Lädt eine .env-Datei und setzt die Variablen in os.environ."""
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"Die Datei {filepath} wurde nicht gefunden.")
+    with open(filepath, 'r') as f:
+        for line in f:
+            # Leere Zeilen und Kommentare überspringen
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            # Schlüssel-Wert-Paare parsen
+            key, value = line.split('=', 1)
+            os.environ[key.strip()] = value.strip()
 
-# SMTP-Konfiguration aus .env-Datei
+# .env-Datei laden
+env_path = "/var/private/isv/open.env"  # Pfad zur .env-Datei
+load_env_file(env_path)
+
+# SMTP-Konfiguration aus Umgebungsvariablen laden
 SMTP_SERVER = os.getenv("SMTP_SERVER")
 SMTP_PORT = int(os.getenv("SMTP_PORT"))
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
-
-
-print("SERVER", SMTP_SERVER)
-print("Port",SMTP_PORT)
-print("User",SMTP_USER)
-print("Pass",SMTP_PASS)
-import sys
-sys.exit(0)
 
 # Debugging: Zeige die geladenen Umgebungsvariablen an
 print(f"""
@@ -28,7 +35,7 @@ Geladene Umgebungsvariablen:
 - SMTP_SERVER: {SMTP_SERVER}
 - SMTP_PORT: {SMTP_PORT}
 - SMTP_USER: {SMTP_USER}
-- SMTP_PASS: {SMTP_PASS[:2]}*** (gekürzt)
+- SMTP_PASS: {SMTP_PASS[:2]}*** (aus Sicherheitsgründen gekürzt)
 """)
 
 # Überprüfe, ob genügend Argumente übergeben wurden
@@ -46,6 +53,28 @@ geburtsdatum = sys.argv[5]
 telefonnummer = sys.argv[6]
 fide_id = sys.argv[7]
 
+# Optionale Felder verarbeiten (falls mehr als 8 Argumente)
+rabatt = sys.argv[8] if len(sys.argv) > 8 else "Nicht angegeben"
+bestaetigung = sys.argv[9] if len(sys.argv) > 9 else "Nein"
+agb = sys.argv[10] if len(sys.argv) > 10 else "?"
+blitzturnier = sys.argv[11] if len(sys.argv) > 11 else "Nein"
+
+# Debugging: Zeige die verarbeiteten Daten an
+print(f"""
+Erhaltene Daten:
+- Empfänger: {to_email}
+- Vorname: {vorname}
+- Nachname: {nachname}
+- Verein: {verein}
+- Geburtsdatum: {geburtsdatum}
+- Telefonnummer: {telefonnummer}
+- FIDE-ID: {fide_id}
+- Rabatt: {rabatt}
+- Bestätigung: {bestaetigung}
+- AGB: {agb}
+- Blitzturnier: {blitzturnier}
+""")
+
 # E-Mail-Inhalt
 message = f"""
 Hallo {vorname} {nachname},
@@ -56,8 +85,10 @@ vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
 - Geburtsdatum: {geburtsdatum}
 - Telefonnummer: {telefonnummer}
 - FIDE-ID: {fide_id}
-
-Bitte überprüfen Sie Ihre Angaben. Falls etwas nicht stimmt, kontaktieren Sie uns.
+- Rabatt: {rabatt}
+- Bestätigung: {bestaetigung}
+- AGB akzeptiert: {agb}
+- Teilnahme am Blitzturnier: {blitzturnier}
 
 Mit freundlichen Grüßen,
 Ihr Team
