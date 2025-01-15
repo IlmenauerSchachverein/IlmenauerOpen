@@ -13,7 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rabatt = htmlspecialchars($_POST['rabatt']);
     $bestaetigung = 'Nein';
     $agb = '?';
-    $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein'; // Neues Feld
+    $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein';
+    $fide_id = isset($_POST['fide_id']) ? htmlspecialchars($_POST['fide_id']) : '';
 
     // Honeypot-Schutz
     if (!empty($_POST['honeypot'])) {
@@ -43,7 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $rabatt,
             $bestaetigung,
             $agb,
-            $blitzturnier // Blitzturnier hinzufügen
+            $blitzturnier,
+            $fide_id
         ];
 
         if (($datei = fopen($dateipfad, 'a')) !== FALSE) {
@@ -56,7 +58,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
 
             // Befehl vorbereiten
-            $command = escapeshellcmd("$pythonPath $pythonScript $email $vorname $nachname \"$verein\" $geburtsdatum $handy");
+            $command = escapeshellcmd("$pythonPath $pythonScript " .
+                escapeshellarg($email) . " " .
+                escapeshellarg($vorname) . " " .
+                escapeshellarg($nachname) . " " .
+                escapeshellarg($verein) . " " .
+                escapeshellarg($geburtsdatum) . " " .
+                escapeshellarg($handy) . " " .
+                escapeshellarg($rabatt) . " " .
+                escapeshellarg($bestaetigung) . " " .
+                escapeshellarg($agb) . " " .
+                escapeshellarg($blitzturnier) . " " .
+                escapeshellarg($fide_id));
 
             // Skript ausführen und Ergebnis prüfen
             $output = [];
