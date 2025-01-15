@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
 
             // Python-Skript ausführen
-            $pythonScript = '/var/www/open/register/mail.py'; // Pfad zum Python-Skript
+            $pythonScript = '/var/private/isv/mail.py'; // Pfad zum Python-Skript
             $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
 
             // Befehl vorbereiten
@@ -76,10 +76,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $return_var = 0;
             exec($command, $output, $return_var);
 
+            // Debugging-Ausgabe
+            echo "<h3>Debugging-Informationen:</h3>";
+            echo "<p><strong>Ausgeführter Befehl:</strong> <code>$command</code></p>";
+
             if ($return_var === 0) {
                 echo "<p style='color:green;'>Die E-Mail wurde erfolgreich gesendet.</p>";
             } else {
                 echo "<p style='color:red;'>Fehler beim Senden der E-Mail.</p>";
+                echo "<p><strong>Rückgabewert:</strong> $return_var</p>";
+                echo "<p><strong>Ausgabe:</strong></p>";
                 echo "<pre>" . implode("\n", $output) . "</pre>";
             }
         } else {
