@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
 
             // Python-Skript ausführen
-            $pythonScript = '/var/private/isv/mail.py'; // Pfad zum Python-Skript
+            $pythonScript = '/var/www/open/register'; // Pfad zum Python-Skript
             $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
 
             // Befehl vorbereiten
