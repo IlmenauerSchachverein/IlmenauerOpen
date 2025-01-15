@@ -97,3 +97,4 @@ send_email(
     to_email, vorname, nachname, verein, geburtsdatum,
     telefonnummer, fide_id, rabatt, bestaetigung, agb, blitzturnier
 )
+ 
