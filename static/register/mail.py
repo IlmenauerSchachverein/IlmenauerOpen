@@ -5,8 +5,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# .env-Datei laden
-load_dotenv("/var/www/open/register/.env")  # Pfad zur .env-Datei anpassen
+# .env-Datei laden (korrekter Pfad)
+load_dotenv("/var/private/isv/open.env")
 
 # Aus Umgebungsvariablen lesen
 SMTP_SERVER = os.getenv("SMTP_SERVER")
@@ -14,7 +14,7 @@ SMTP_PORT = os.getenv("SMTP_PORT")
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
 
-# Debugging: Zeige die geladenen Umgebungsvariablen
+# Debugging: Zeige die geladenen Umgebungsvariablen an
 print(f"""
 Geladene Umgebungsvariablen:
 - SMTP_SERVER: {SMTP_SERVER}
@@ -61,3 +61,13 @@ Bestätigung: {bestaetigung}
 AGB: {agb}
 Blitzturnier: {blitzturnier}
 """)
+
+# SMTP-Konfiguration und E-Mail-Versand
+try:
+    with smtplib.SMTP(SMTP_SERVER, int(SMTP_PORT)) as server:
+        server.starttls()  # TLS aktivieren
+        server.login(SMTP_USER, SMTP_PASS)
+        print("SMTP-Authentifizierung erfolgreich!")
+except Exception as e:
+    print(f"Fehler bei der SMTP-Verbindung: {e}")
+    sys.exit(1)
