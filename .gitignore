@@ -15,3 +15,7 @@ resources/
 *.pgi
 *.cb*
 *.pgn
+
+# ENV 
+*.env 
+!default.env
