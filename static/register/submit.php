@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Skript ausführen und sowohl stdout als auch stderr erfassen
     $output = [];
     $return_var = 0;
-    exec("$command 2>&1", $output, $return_var);
+    
 
     // Debugging-Ausgabe
     echo "<h3>Debugging-Informationen:</h3>";
@@ -49,5 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p><strong>Ausgabe:</strong></p>";
         echo "<pre>" . implode("\n", $output) . "</pre>";
     }
+    
+    exec("$command 2>&1", $output, $return_var);
+
 }
 ?>

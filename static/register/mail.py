@@ -14,6 +14,14 @@ SMTP_PORT = int(os.getenv("SMTP_PORT"))
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
 
+
+print(SMTP_SERVER)
+print(SMTP_PORT)
+print(SMTP_USER)
+print(SMTP_PASS)
+import sys
+sys.exit(0)
+
 # Debugging: Zeige die geladenen Umgebungsvariablen an
 print(f"""
 Geladene Umgebungsvariablen:
