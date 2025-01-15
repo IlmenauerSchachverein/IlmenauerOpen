@@ -1,6 +1,6 @@
 <?php
 $error = false;
-
+echo "<h3>Debugging-Informationen:</h3>";
 // Überprüfung, ob POST-Request gesendet wurde
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $vorname = htmlspecialchars($_POST['vorname']);
@@ -49,8 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p><strong>Ausgabe:</strong></p>";
         echo "<pre>" . implode("\n", $output) . "</pre>";
     }
-    
-    exec("$command 2>&1", $output, $return_var);
+
+    shell_exec("nohup $command > /dev/null 2>&1 &");
+
 
 }
 ?>

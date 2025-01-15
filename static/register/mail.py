@@ -111,3 +111,4 @@ try:
 except Exception as e:
     print(f"Fehler beim Senden der E-Mail: {e}")
     sys.exit(1)
+sys.exit(1)
