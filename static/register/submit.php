@@ -55,4 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
+// E-Mail senden
+require '/var/www/sendmail/sendopen/open.php';
+
 ?>
