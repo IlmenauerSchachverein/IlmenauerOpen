@@ -15,10 +15,10 @@ SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
 
 
-print(SMTP_SERVER)
-print(SMTP_PORT)
-print(SMTP_USER)
-print(SMTP_PASS)
+print("SERVER", SMTP_SERVER)
+print("Port",SMTP_PORT)
+print("User",SMTP_USER)
+print("Pass",SMTP_PASS)
 import sys
 sys.exit(0)
 
