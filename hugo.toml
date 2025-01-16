@@ -93,14 +93,14 @@ enableGitInfo = true
     displayPoweredBy = true
 
   [params.editURL]
-    enable = false
-    base = "https://github.com/IlmenauerSchachverein/IlmenauerOpen2025/edit/main/content"
+    enable = true
+    base = "https://github.com/IlmenauerSchachverein/IlmenauerOpen/edit/main/content"
 
   [params.page]
     width = "full"
 
 [sitemap]
-  changefreq = "daily"   # Gibt an, wie oft die Inhalte geändert werden (z. B. "daily", "weekly", "monthly").
-  priority = 0.5         # Gibt die Wichtigkeit der Seiten an (0.0 bis 1.0).
-  filename = "sitemap.xml" # Name der Sitemap-Datei.
+  changefreq = "daily" 
+  priority = 0.5         
+  filename = "sitemap.xml" 
 

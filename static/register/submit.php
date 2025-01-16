@@ -1,5 +1,5 @@
 <?php
-$error = false;
+$error = false;     // Fehler-Flag
 
 // Überprüfung, ob POST-Request gesendet wurde
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
