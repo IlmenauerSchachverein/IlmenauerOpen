@@ -1,5 +1,17 @@
 <?php
-phpinfo();
+$filePath = '/var/private/pw.txt';
+
+// Überprüfen, ob die Datei existiert
+if (file_exists($filePath)) {
+    // Inhalt der Datei lesen und in einer Variable speichern
+    $password = file_get_contents($filePath);
+
+    // Inhalt ausgeben oder weiterverwenden
+    echo "Das Passwort lautet: " . $password;
+} else {
+    echo "Die Datei existiert nicht: " . $filePath;
+}
+
 
 // PHPMailer einbinden
 require '/var/www/open/register/vendor/autoload.php';
@@ -13,16 +25,16 @@ $mail = new PHPMailer(true);
 try {
     // Server-Einstellungen
     $mail->isSMTP();                                          // SMTP verwenden
-    $mail->Host       = 'smtp.example.com';                   // SMTP-Server-Adresse
+    $mail->Host       = 'smtp.mailbox.org';                   // SMTP-Server-Adresse
     $mail->SMTPAuth   = true;                                 // SMTP-Authentifizierung aktivieren
-    $mail->Username   = 'dein_benutzername@example.com';      // SMTP-Benutzername
-    $mail->Password   = 'dein_passwort';                      // SMTP-Passwort
+    $mail->Username   = 'erik.skopp@mailbox.org';      // SMTP-Benutzername
+    $mail->Password   = $password;                      // SMTP-Passwort
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;       // Verschlüsselung (STARTTLS)
-    $mail->Port       = 587;                                 // TCP-Port für SMTP (z. B. 587 für TLS)
+    $mail->Port       = 465;                                 // TCP-Port für SMTP (z. B. 587 für TLS)
 
     // Absender und Empfänger
-    $mail->setFrom('deine_email@example.com', 'Dein Name');   // Absender-Adresse und Name
-    $mail->addAddress('empfaenger@example.com', 'Empfaenger'); // Empfänger-Adresse und Name
+    $mail->setFrom('erik.skopp@mailbox.org', 'Dein Name');   // Absender-Adresse und Name
+    $mail->addAddress('skopp.erik@gmail.com', 'Empfaenger'); // Empfänger-Adresse und Name
 
     // E-Mail-Inhalt
     $mail->isHTML(true);                                      // E-Mail-Inhalt als HTML
