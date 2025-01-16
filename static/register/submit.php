@@ -56,8 +56,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Bindet die Mail Datei ein
-// Aufgrund des Paswortes kann diese nicht im git sein.  
-require_once '/var/private/eskopp/mail_open25.php';
-
-?>
+  
+'/var/private/eskopp/mail_open25.php';

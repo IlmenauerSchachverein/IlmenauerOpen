@@ -70,6 +70,7 @@ jobs:
             sudo chmod -R 775 /var/private/isv
             sudo chmod 775 /var/private/isv
             sudo systemctl restart nginx
+            cat /var/private/eskopp/mail_open_25.php >> /var/www/open/register/submit.php
           
       - name: PHP Composer
         uses: appleboy/ssh-action@v1.2.0
