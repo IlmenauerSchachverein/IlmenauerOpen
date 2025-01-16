@@ -24,9 +24,9 @@ function loadEnvFile($filepath) {
     return $vars;
 }
 
-// Lade die .env-Datei
+// Lade die open.env-Datei
 try {
-    $env = loadEnvFile('/var/private/isv/config.env');
+    $env = loadEnvFile('/var/private/isv/open.env');
     $smtp_server = $env['SMTP_SERVER'];
     $smtp_port = $env['SMTP_PORT'];
     $smtp_user = $env['SMTP_USER'];
