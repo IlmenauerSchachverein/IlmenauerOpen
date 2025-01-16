@@ -64,7 +64,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            sudo chown www-data:www-data /var/private/isv/open25.csv
+            sudo chown www-data:www-data /var/private/isv/open25.csv 
             sudo chmod 664 /var/private/isv/open25.csv
             sudo chown -R www-data:www-data /var/private/isv
             sudo chmod -R 775 /var/private/isv
