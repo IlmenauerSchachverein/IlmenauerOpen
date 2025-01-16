@@ -3,7 +3,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Funktion: .env-Datei laden
+require '/var/www/open/register/vendor/autoload.php'; // Autoloader von Composer
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Funktion zum Laden der `.env`-Datei
 function loadEnvFile($filepath) {
     if (!file_exists($filepath)) {
         throw new Exception("Die Datei $filepath wurde nicht gefunden.");
@@ -12,19 +17,13 @@ function loadEnvFile($filepath) {
     $vars = [];
     $lines = file($filepath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
-        // Kommentare überspringen
-        if (strpos(trim($line), '#') === 0) {
-            continue;
-        }
-
-        // Schlüssel-Wert-Paare parsen
+        if (strpos(trim($line), '#') === 0) continue; // Kommentare überspringen
         list($key, $value) = explode('=', $line, 2);
         $vars[trim($key)] = trim($value);
     }
     return $vars;
 }
 
-// Lade die open.env-Datei
 try {
     $env = loadEnvFile('/var/private/isv/open.env');
     $smtp_server = $env['SMTP_SERVER'];
@@ -37,7 +36,6 @@ try {
     die("<p style='color:red;'>Fehler beim Laden der Konfiguration: " . $e->getMessage() . "</p>");
 }
 
-// Überprüfung, ob POST-Request gesendet wurde
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $vorname = htmlspecialchars($_POST['vorname']);
     $nachname = htmlspecialchars($_POST['nachname']);
@@ -51,10 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein';
     $fide_id = isset($_POST['fide_id']) ? htmlspecialchars($_POST['fide_id']) : '';
 
-    // CSV-Datei-Pfad
+    // CSV-Datei speichern
     $dateipfad = '/var/private/isv/open25.csv';
-
-    // Schreiben in die CSV-Datei
     if (($datei = fopen($dateipfad, 'a')) !== FALSE) {
         $datenzeile = [
             date('d-m-Y'),
@@ -78,60 +74,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("<p style='color:red;'>Fehler: CSV-Datei konnte nicht geöffnet werden.</p>");
     }
 
-    // SMTP-E-Mail senden
-    $subject = "Anmeldebestätigung";
-    $body = "
-    Hallo $vorname $nachname,
+    // E-Mail senden mit PHPMailer
+    $mail = new PHPMailer(true);
+    try {
+        // Server-Einstellungen
+        $mail->isSMTP();
+        $mail->Host = $smtp_server;
+        $mail->SMTPAuth = true;
+        $mail->Username = $smtp_user;
+        $mail->Password = $smtp_pass;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = $smtp_port;
 
-    Vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
+        // Absender und Empfänger
+        $mail->setFrom($from_email, 'Ilmenauer Schachverein');
+        $mail->addAddress($email, "$vorname $nachname");
 
-    - Verein: $verein
-    - Geburtsdatum: $geburtsdatum
-    - Telefonnummer: $handy
-    - FIDE-ID: $fide_id
-    - Rabatt: $rabatt
-    - Bestätigung: $bestaetigung
-    - AGB akzeptiert: $agb
-    - Teilnahme am Blitzturnier: $blitzturnier
+        // BCC-Empfänger hinzufügen
+        foreach ($bcc_recipients as $bcc) {
+            $mail->addBCC(trim($bcc));
+        }
 
-    Mit freundlichen Grüßen,
-    Ihr Team
-    ";
+        // E-Mail-Inhalt
+        $mail->isHTML(true);
+        $mail->Subject = "Anmeldebestätigung";
+        $mail->Body = "
+        <p>Hallo $vorname $nachname,</p>
+        <p>Vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:</p>
+        <ul>
+            <li>Verein: $verein</li>
+            <li>Geburtsdatum: $geburtsdatum</li>
+            <li>Telefonnummer: $handy</li>
+            <li>FIDE-ID: $fide_id</li>
+            <li>Rabatt: $rabatt</li>
+            <li>Bestätigung: $bestaetigung</li>
+            <li>AGB akzeptiert: $agb</li>
+            <li>Teilnahme am Blitzturnier: $blitzturnier</li>
+        </ul>
+        <p>Mit freundlichen Grüßen,<br>Ihr Team</p>";
+        $mail->AltBody = "Hallo $vorname $nachname,\n\nVielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:\n
+        Verein: $verein
+        Geburtsdatum: $geburtsdatum
+        Telefonnummer: $handy
+        FIDE-ID: $fide_id
+        Rabatt: $rabatt
+        Bestätigung: $bestaetigung
+        AGB akzeptiert: $agb
+        Teilnahme am Blitzturnier: $blitzturnier\n\nMit freundlichen Grüßen,\nIhr Team";
 
-    $headers = "From: $from_email\r\n";
-    $headers .= "To: $email\r\n";
-    foreach ($bcc_recipients as $bcc) {
-        $headers .= "BCC: " . trim($bcc) . "\r\n";
-    }
-    $headers .= "Subject: $subject\r\n";
-    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
-
-    // Verbindung zu SMTP herstellen und senden
-    $socket = fsockopen($smtp_server, $smtp_port, $errno, $errstr, 30);
-    if (!$socket) {
-        die("<p style='color:red;'>Fehler: Keine Verbindung zu SMTP-Server ($errstr).</p>");
-    }
-
-    fwrite($socket, "EHLO $smtp_server\r\n");
-    fwrite($socket, "STARTTLS\r\n");
-    stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
-    fwrite($socket, "EHLO $smtp_server\r\n");
-    fwrite($socket, "AUTH LOGIN\r\n");
-    fwrite($socket, base64_encode($smtp_user) . "\r\n");
-    fwrite($socket, base64_encode($smtp_pass) . "\r\n");
-    fwrite($socket, "MAIL FROM: <$from_email>\r\n");
-    fwrite($socket, "RCPT TO: <$email>\r\n");
-    fwrite($socket, "DATA\r\n");
-    fwrite($socket, "$headers\r\n$body\r\n.\r\n");
-    fwrite($socket, "QUIT\r\n");
-
-    $response = stream_get_contents($socket);
-    fclose($socket);
-
-    if (strpos($response, "250") !== false) {
+        $mail->send();
         echo "<p style='color:green;'>Die E-Mail wurde erfolgreich gesendet.</p>";
-    } else {
-        echo "<p style='color:red;'>Fehler beim Senden der E-Mail: $response</p>";
+    } catch (Exception $e) {
+        echo "<p style='color:red;'>Fehler beim Senden der E-Mail: {$mail->ErrorInfo}</p>";
     }
 }
 ?>
