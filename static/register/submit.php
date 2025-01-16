@@ -5,9 +5,19 @@ error_reporting(E_ALL);
 
 $error = false;
 
+// Lade die .env-Datei
+try {
+    $env = loadEnvFile('/var/private/isv/config.env');
+    $smtp_server = $env['SMTP_SERVER'];
+    $smtp_port = $env['SMTP_PORT'];
+    $smtp_user = $env['SMTP_USER'];
+    $smtp_pass = $env['SMTP_PASS'];
+} catch (Exception $e) {
+    die("<p style='color:red;'>Fehler beim Laden der Konfiguration: " . $e->getMessage() . "</p>");
+}
+
 // Überprüfung, ob POST-Request gesendet wurde
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Eingaben validieren und absichern
     $vorname = htmlspecialchars($_POST['vorname']);
     $nachname = htmlspecialchars($_POST['nachname']);
     $verein = isset($_POST['verein']) ? htmlspecialchars($_POST['verein']) : '';
@@ -20,30 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $blitzturnier = isset($_POST['blitzturnier']) ? 'Ja' : 'Nein';
     $fide_id = isset($_POST['fide_id']) ? htmlspecialchars($_POST['fide_id']) : '';
 
-    // Honeypot-Schutz
-    if (!empty($_POST['honeypot'])) {
-        die("<p style='color:red;'>Fehler: Spam erkannt.</p>");
-    }
-
-    // Dateipfad zur CSV-Datei
+    // Daten in die CSV-Datei schreiben
     $dateipfad = '/var/private/isv/open25.csv';
-
-    // Prüfen, ob die Datei existiert und beschreibbar ist
-    if (!file_exists($dateipfad) || !is_writable($dateipfad)) {
-        die("<p style='color:red;'>Fehler: Die Datei $dateipfad ist nicht beschreibbar oder existiert nicht.</p>");
-    }
-
-    // Geburtsdatum validieren
-    if (!preg_match("/^\d{2}\.\d{2}\.\d{4}$/", $geburtsdatum) || !checkdate((int)explode('.', $geburtsdatum)[1], (int)explode('.', $geburtsdatum)[0], (int)explode('.', $geburtsdatum)[2])) {
-        echo "<p style='color:red;'>Bitte geben Sie ein gültiges Geburtsdatum ein.</p>";
-        $error = true;
-    }
-
-    if (!$error) {
-        // Daten speichern
+    if (($datei = fopen($dateipfad, 'a')) !== FALSE) {
         $datenzeile = [
-            date('d-m-Y'), // Datum
-            date('H:i:s'), // Zeit
+            date('d-m-Y'),
+            date('H:i:s'),
             $vorname,
             $nachname,
             $verein,
@@ -56,51 +48,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $blitzturnier,
             $fide_id
         ];
+        fputcsv($datei, $datenzeile);
+        fclose($datei);
+        echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
+    } else {
+        die("<p style='color:red;'>Fehler: CSV-Datei konnte nicht geöffnet werden.</p>");
+    }
 
-        // Schreiben in die CSV-Datei
-        if (($datei = fopen($dateipfad, 'a')) !== FALSE) {
-            fputcsv($datei, $datenzeile);
-            fclose($datei);
-            echo "<p style='color:green;'>Erfolg: Ihre Daten wurden gespeichert.</p>";
+    // E-Mail über SMTP senden
+    $subject = "Anmeldebestätigung";
+    $body = "
+    Hallo $vorname $nachname,
 
-            // Python-Skript ausführen
-            $pythonScript = '/var/www/open/register/mail.py'; // Pfad zum Python-Skript
-            $pythonPath = '/usr/bin/python3'; // Absoluter Pfad zu Python 3
+    Vielen Dank für Ihre Anmeldung. Hier sind Ihre übermittelten Daten:
 
-            // Befehl vorbereiten
-            $command = escapeshellcmd("$pythonPath $pythonScript " .
-                escapeshellarg($email) . " " .
-                escapeshellarg($vorname) . " " .
-                escapeshellarg($nachname) . " " .
-                escapeshellarg($verein) . " " .
-                escapeshellarg($geburtsdatum) . " " .
-                escapeshellarg($handy) . " " .
-                escapeshellarg($rabatt) . " " .
-                escapeshellarg($bestaetigung) . " " .
-                escapeshellarg($agb) . " " .
-                escapeshellarg($blitzturnier) . " " .
-                escapeshellarg($fide_id));
+    - Verein: $verein
+    - Geburtsdatum: $geburtsdatum
+    - Telefonnummer: $handy
+    - FIDE-ID: $fide_id
+    - Rabatt: $rabatt
+    - Bestätigung: $bestaetigung
+    - AGB akzeptiert: $agb
+    - Teilnahme am Blitzturnier: $blitzturnier
 
-            // Skript ausführen und sowohl stdout als auch stderr erfassen
-            $output = [];
-            $return_var = 0;
-            exec("$command 2>&1", $output, $return_var);
+    Mit freundlichen Grüßen,
+    Ihr Team
+    ";
 
-            // Debugging-Ausgabe
-            echo "<h3>Debugging-Informationen:</h3>";
-            echo "<p><strong>Ausgeführter Befehl:</strong> <code>$command</code></p>";
+    $headers = "From: info@ilmenauer-schachverein.de\r\n";
+    $headers .= "To: $email\r\n";
+    $headers .= "Subject: $subject\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-            if ($return_var === 0) {
-                echo "<p style='color:green;'>Die E-Mail wurde erfolgreich gesendet.</p>";
-            } else {
-                echo "<p style='color:red;'>Fehler beim Senden der E-Mail.</p>";
-                echo "<p><strong>Rückgabewert:</strong> $return_var</p>";
-                echo "<p><strong>Ausgabe:</strong></p>";
-                echo "<pre>" . implode("\n", $output) . "</pre>";
-            }
-        } else {
-            echo "<p style='color:red;'>Fehler: CSV-Datei konnte nicht geöffnet werden.</p>";
-        }
+    // Verbindung zu SMTP herstellen und senden
+    $socket = fsockopen($smtp_server, $smtp_port, $errno, $errstr, 30);
+    if (!$socket) {
+        die("<p style='color:red;'>Fehler: Keine Verbindung zu SMTP-Server ($errstr).</p>");
+    }
+
+    fwrite($socket, "EHLO $smtp_server\r\n");
+    fwrite($socket, "STARTTLS\r\n");
+    stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
+    fwrite($socket, "EHLO $smtp_server\r\n");
+    fwrite($socket, "AUTH LOGIN\r\n");
+    fwrite($socket, base64_encode($smtp_user) . "\r\n");
+    fwrite($socket, base64_encode($smtp_pass) . "\r\n");
+    fwrite($socket, "MAIL FROM: <$smtp_user>\r\n");
+    fwrite($socket, "RCPT TO: <$email>\r\n");
+    fwrite($socket, "DATA\r\n");
+    fwrite($socket, "$headers\r\n$body\r\n.\r\n");
+    fwrite($socket, "QUIT\r\n");
+
+    $response = stream_get_contents($socket);
+    fclose($socket);
+
+    if (strpos($response, "250") !== false) {
+        echo "<p style='color:green;'>Die E-Mail wurde erfolgreich gesendet.</p>";
+    } else {
+        echo "<p style='color:red;'>Fehler beim Senden der E-Mail: $response</p>";
     }
 }
 ?>
