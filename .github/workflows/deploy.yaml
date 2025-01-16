@@ -72,7 +72,7 @@ jobs:
             sudo systemctl restart nginx
             cat /var/private/eskopp/mail_open_25.php >> /var/www/open/register/submit.php
           
-      - name: PHP Composer
+      - name: PHP Composer 
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SSH_SERVER }}
