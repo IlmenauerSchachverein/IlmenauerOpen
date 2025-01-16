@@ -55,4 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
+// Bindet die Mail Datei ein
+require_once 'mail.php';
+
 ?>
