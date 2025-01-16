@@ -15,3 +15,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+  
+  - package-ecosystem: "composer"
+    directory: "/static/register/"
+    schedule:
+      interval: "daily"
