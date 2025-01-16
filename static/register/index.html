@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="https://open.ilmenauer-schachverein.de/register/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4QPZR8HZY"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-H4QPZR8HZY');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-H4QPZR8HZY');
     </script>
 </head>
+
 <body>
     <form action="https://open.ilmenauer-schachverein.de/register/submit.php" method="POST">
         <label for="vorname">Vorname*</label>
@@ -25,7 +27,8 @@
         <input type="text" id="verein" name="verein">
 
         <label for="geburtsdatum">Geburtsdatum (TT.MM.JJJJ)*</label>
-        <input type="text" id="geburtsdatum" name="geburtsdatum" placeholder="TT.MM.JJJJ" pattern="\d{2}\.\d{2}\.\d{4}" title="Bitte das Format TT.MM.JJJJ verwenden" required>
+        <input type="text" id="geburtsdatum" name="geburtsdatum" placeholder="TT.MM.JJJJ" pattern="\d{2}\.\d{2}\.\d{4}"
+            title="Bitte das Format TT.MM.JJJJ verwenden" required>
 
         <label for="handy">Handynummer</label>
         <input type="text" id="handy" name="handy">
@@ -65,4 +68,5 @@
         <input type="submit" value="Absenden">
     </form>
 </body>
+
 </html>
