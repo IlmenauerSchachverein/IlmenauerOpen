@@ -1,0 +1,18 @@
+{
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "monolog/monolog": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
