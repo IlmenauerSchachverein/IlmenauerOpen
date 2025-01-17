@@ -10,7 +10,7 @@ Es ist wichtig, dass die Hugo Extend Version installiert ist. Es ist mindestens 
 #### Allgemein
 - Windows:
 ```powershell
-winget install Hugo.Hugo.Extended 
+winget install Hugo.Hugo.Extended
 ```
 - Linux
 ```bash
