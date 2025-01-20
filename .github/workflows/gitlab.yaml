@@ -22,3 +22,4 @@ jobs:
           gitlab_token: ${{ secrets.GITLAB }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           base64: "true"
+ 
