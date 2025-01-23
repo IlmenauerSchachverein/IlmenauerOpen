@@ -47,14 +47,14 @@ jobs:
           source: "public/*"
           target: "/var/www//open"
           rm: true
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
 
       - name: Create folder structure
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: cd /var/www/open; mv public/* .;  rm -rf public
 
       - name: Anpassen der Rechte
@@ -62,7 +62,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: |
             sudo chown www-data:www-data /var/private/isv/open25.csv 
             sudo chmod 664 /var/private/isv/open25.csv
@@ -77,7 +77,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: |
               cd /var/www/open/register
               php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
