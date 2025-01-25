@@ -45,7 +45,7 @@ jobs:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
           source: "public/*"
-          target: "/var/www//open"
+          target: "/var/www/open"
           rm: true
           password: ${{ secrets.SSH_PASSWORD }}
 
