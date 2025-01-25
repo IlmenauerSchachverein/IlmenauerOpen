@@ -37,6 +37,9 @@ jobs:
           go mod edit -go="${{ steps.go-version.outputs.go_version }}"
           go mod tidy
           npm update
+          hugo mod get github.com/gethinode/mod-flexsearch
+          hugo mod get github.com/imfing/hextra
+
 
       - name: Commit and Push Changes
         env:
