@@ -25,7 +25,14 @@ jobs:
         run: |
           LATEST_GO_VERSION=$(curl -s "https://go.dev/VERSION?m=text" | sed 's/^go//')
           echo "::set-output name=go_version::$LATEST_GO_VERSION"
+      
+      - name: Install Hugo Extended
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
 
+          
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
