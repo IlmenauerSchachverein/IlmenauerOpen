@@ -1,0 +1,106 @@
+title = "2. Ilmenauer Open 2024"
+baseURL = "https://open.ilmenauer-schachverein.de"
+defaultContentLanguage = "de"
+enableGitInfo = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+  [[module.imports]]
+    path = "github.com/gethinode/mod-flexsearch"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    noClasses = false
+
+[languages]
+  [languages.de]
+    languageName = "German"
+    weight = 1
+    title = "2. Ilmenauer Open 2025"
+    contentDir = "content/de"
+
+[menu]
+  [[menu.main]]
+    name = "Anmeldung"
+    pageRef = "/2025/anmeldung"
+    weight = 1
+  [[menu.main]]
+    name = "DGT-Bretter"
+    pageRef = "/2025/partien"
+    weight = 2
+  [[menu.main]]
+    name = "Ausschreibung"
+    pageRef = "/2025/ausschreibung"
+    weight = 1
+  [[menu.main]]
+    name = "Runden"
+    pageRef = "/2025/open/runden"
+    weight = 1
+  [[menu.main]]
+    name = "Startrangliste"
+    pageRef = "/2025/startrangliste"
+    weight = 1
+  [[menu.main]]
+    name = "Datenschutzerklärung"
+    pageRef = "datenschutz"
+    weight = 3
+  [[menu.main]]
+    name = "Impressum"
+    pageRef = "impressum"
+    weight = 3
+  [[menu.main]]
+    name = "Ilmenauer Schachverein ↗"
+    url = "https://ilmenauer-schachverein.de"
+    weight = 4
+  [[menu.main]]
+    name = "Search"
+    weight = 5
+    [menu.main.params]
+      type = "search"
+  [[menu.main]]
+    name = "GitHub"
+    weight = 6
+    url = "https://gitlab.ilmenauer-schachverein.de/turniere/ilmenaueropen"
+    [menu.main.params]
+      icon = "github"
+  [[menu.main]]
+    name = "Instagram"
+    weight = 7
+    url = "https://instagram.com/ilmenauer_schachverein"
+    [menu.main.params]
+      icon = "instagram"
+
+[services.googleAnalytics]
+  ID = "G-H4QPZR8HZY"
+
+[params]
+  disableToc = true
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+
+  [params.theme]
+    default = "light"
+
+  [params.footer]
+    displayCopyright = true
+    displayPoweredBy = true
+
+  [params.editURL]
+    enable = true
+    base = "https://gitlab.ilmenauer-schachverein.de/turniere/ilmenaueropen/-/edit"
+
+  [params.page]
+    width = "full"
+
+[sitemap]
+  changefreq = "daily" 
+  priority = 0.5         
+  filename = "sitemap.xml" 
+
