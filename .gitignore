@@ -1,0 +1,17 @@
+# Hugo output
+public/
+resources/
+.hugo_build.lock
+/public/
+*public*
+/resources/
+*resources*
+
+# Editor
+.vscode/
+
+# ChessBase 
+*.ini
+*.pgi
+*.cb*
+*.pgn
