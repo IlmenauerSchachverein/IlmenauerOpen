@@ -22,7 +22,7 @@ update:
       # Git LFS Setup
       echo "Setting up Git LFS..."
       git lfs install --local
-      export GIT_LFS_SKIP_SMUDGE=1  # Verzögert LFS-Download bis zum Pull
+      export GIT_LFS_SKIP_SMUDGE=1
       git lfs pull || echo "Warning: LFS pull failed, retrying..."
       git lfs fetch --all || echo "Warning: LFS fetch failed, continuing..."
 
@@ -35,7 +35,7 @@ update:
       latest_go_version=$(go version | awk '{print $3}' | sed 's/go//')
       go mod edit -go "$latest_go_version"
       echo "Running Go module updates..."
-      go mod tidy  # Nutzt eine bessere Methode zur Verwaltung von Abhängigkeiten
+      go mod tidy
 
       # Build-Skript vorbereiten
       echo "Executing update scripts..."
@@ -57,7 +57,7 @@ update:
 
       # Git Remote setzen und Push ausführen
       echo "Setting Git remote with PAT..."
-      git remote set-url origin "https://oauth2:${PAT}@gitlab.ilmenauer-schachverein.de/turniere/ilmenaueropen.git"
+      git remote set-url origin "https://oauth2:${PAT}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
       echo "Pulling latest changes..."
       git pull origin $CI_COMMIT_REF_NAME --rebase || echo "No pull needed"
       echo "Pushing changes..."
@@ -91,19 +91,17 @@ deploy:
   image: archlinux:latest
   before_script:
     - |
-      echo "Initializing SSH for deployment..."
-      pacman -Syu --noconfirm openssh
-      eval "$(ssh-agent -s)"
-      echo "$SSHKEY" | tr -d '\r' | ssh-add -
-      ssh-add -l || echo "SSH key could not be added"
-      mkdir -p ~/.ssh
-      ssh-keyscan -H "$SSHSERVER" > ~/.ssh/known_hosts
+      echo "Installing SSH and rsync..."
+      pacman -Syu --noconfirm openssh sshpass rsync
   script:
     - |
       echo "Deleting previous files on server..."
-      ssh -o StrictHostKeyChecking=no "isv@$SSHSERVER" "rm -rf /var/www/open/*"
-      ssh -o StrictHostKeyChecking=no "isv@$SSHSERVER" "mkdir -p /var/www/open"
+      sshpass -p "$isvpass" ssh -o StrictHostKeyChecking=no "webuser@$isvip" "rm -rf /var/www/open/*"
+
+      echo "Creating directory if not exists..."
+      sshpass -p "$isvpass" ssh -o StrictHostKeyChecking=no "webuser@$isvip" "mkdir -p /var/www/open"
+
       echo "Transferring new files..."
-      scp -o StrictHostKeyChecking=no -r public/* "isv@$SSHSERVER:/var/www/open"
+      sshpass -p "$isvpass" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ "webuser@$isvip:/var/www/open/"
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
