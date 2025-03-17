@@ -1,4 +1,4 @@
-title = "2. Ilmenauer Open 2024"
+title = "2. Ilmenauer Open 2025"
 baseURL = "https://open.ilmenauer-schachverein.de"
 defaultContentLanguage = "de"
 enableGitInfo = true
@@ -39,7 +39,7 @@ enableGitInfo = true
     weight = 1
   [[menu.main]]
     name = "Runden"
-    pageRef = "/2025/open/runden"
+    pageRef = "/2025/open/runde"
     weight = 1
   [[menu.main]]
     name = "Startrangliste"
@@ -65,7 +65,7 @@ enableGitInfo = true
   [[menu.main]]
     name = "GitHub"
     weight = 6
-    url = "https://gitlab.ilmenauer-schachverein.de/turniere/ilmenaueropen"
+    url = "https://gitlab.erik-skopp.de/ilmenauerschachverein/turniere/schnellschachturnier"
     [menu.main.params]
       icon = "github"
   [[menu.main]]
@@ -93,8 +93,8 @@ enableGitInfo = true
     displayPoweredBy = true
 
   [params.editURL]
-    enable = true
-    base = "https://gitlab.ilmenauer-schachverein.de/turniere/ilmenaueropen/-/edit"
+    enable = false
+    base = ""
 
   [params.page]
     width = "full"
