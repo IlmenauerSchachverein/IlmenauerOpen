@@ -57,7 +57,7 @@ update:
 
       # Git Remote setzen und Push ausführen
       echo "Setting Git remote with PAT..."
-      git remote set-url origin "https://oauth2:${PAT}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
+      git remote set-url origin "https://oauth2:${pat}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
       echo "Pulling latest changes..."
       git pull origin $CI_COMMIT_REF_NAME --rebase || echo "No pull needed"
       echo "Pushing changes..."
