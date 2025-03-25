@@ -53,6 +53,8 @@ update:
       # Änderungen committen (falls vorhanden)
       echo "Staging changes..."
       git add .
+      git add .*
+      git add go.*
       git add content/*
       echo "Committing changes..."
       git commit -m "Automatic update of Go, Hugo and Go dependencies [skip ci]" || echo "No changes to commit"
