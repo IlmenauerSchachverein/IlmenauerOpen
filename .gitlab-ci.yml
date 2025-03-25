@@ -35,6 +35,8 @@ update:
       latest_go_version=$(go version | awk '{print $3}' | sed 's/go//')
       go mod edit -go "$latest_go_version"
       echo "Running Go module updates..."
+      hugo mod get github.com/imfing/hextra
+      hugo mod get github.com/gethinode/mod-flexsearch
       go mod tidy
 
       # Build-Skript vorbereiten
