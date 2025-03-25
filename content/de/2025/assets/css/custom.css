@@ -1,3 +1,7 @@
+/**
+* Entfernt das nervige TOC als codec.
+*/
+
 nav.hextra-toc {
     display: none !important;
   }
@@ -5,4 +9,3 @@ nav.hextra-toc {
   .hx-w-full.hx-min-w-0.hx-leading-7 {
     width: auto !important;
   }
-  
