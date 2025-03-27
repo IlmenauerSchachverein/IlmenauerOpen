@@ -18,9 +18,6 @@ Das Orgateam macht das Turnier ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 <hr>
 
-{{< callout type="error" >}}
-Folgendes ist nur eine Testumgebung.
-{{< /callout >}}
 <div id="startrangliste">
 </div>
 <script>
