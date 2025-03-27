@@ -41,6 +41,14 @@ Das Orgateam macht das Turnier ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 Folgendes ist nur eine Testumgebung.
 {{< /callout >}}
 
-<!-- Testumgebung Bezahlvorgang von Thomas -->
-<iframe src="https://register.ilmenauer-schachverein.de/open/startrangliste.php" width="100%" height="1200px" style="border: none;"></iframe>
-<!-- END TEST -->
+<script>
+fetch("https://register.ilmenauer-schachverein.de/open/startrangliste.php")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("startrangliste").innerHTML = html;
+  })
+  .catch(error => {
+    document.getElementById("startrangliste").innerText = "Teilnehmerliste konnte nicht geladen werden.";
+    console.error(error);
+  });
+</script>
