@@ -41,7 +41,7 @@ Das Orgateam macht das Turnier ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 Folgendes ist nur eine Testumgebung.
 {{< /callout >}}
 <div id="startrangliste">
-
+</div>
 <script>
 fetch("https://register.ilmenauer-schachverein.de/open/startrangliste.php")
   .then(response => response.text())
@@ -53,4 +53,4 @@ fetch("https://register.ilmenauer-schachverein.de/open/startrangliste.php")
     console.error(error);
   });
 </script>
-</div>
+
