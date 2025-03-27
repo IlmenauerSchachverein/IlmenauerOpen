@@ -1,0 +1,19 @@
+2. Ilmenauer Open 2025
+Ilmenauer Schachverein
+
+Teilnehmerliste: (Sortiert nach Spielernummer)
+TlnNr	Teilnehmer	Titel	TWZ	Attr.	Verein/Ort	Land	Geburt
+1	Jandke,Manfred		2078	M	SSG Lübbenau e.V.	GER	1953
+2	Eichenauer,Pascal		2028	M	Ilmenauer SV	GER	1999
+3	Geißhirt,Marco		1984	M	Ilmenauer SV	GER	1990
+4	Aniol,Nico		1983	M	VfL 1990 Gera	GER	2010
+5	Aniol,Adrian		1960	M	VfL 1990 Gera	GER	2005
+6	Ellerbrock,Manfred		1786	M	SV Rochade Neuenstadt	GER	1948
+7	Handschuh,Franz		1780	M	SV Stützerbach	GER	1948
+8	Strohner,Maximilian		1771	M	SC Turm Erfurt	GER	1993
+9	Rauch,Arwid		1732	M	Ilmenauer SV	GER	2003
+10	Wagner,Martin		1685	M	SG Limbach-Oberfrohna	GER	1994
+11	Eisenbach,Markus,Dr.		1505	M	Ilmenauer SV	GER	1984
+12	Brandt,Wolfgang		1489	M	SV Gehren 1911	GER	1960
+13	Pantleon,Florian		1264	M	SG Bettringen	GER	1999
+14	Winger,Frank		832	M	Ilmenauer SV	GER	1964
