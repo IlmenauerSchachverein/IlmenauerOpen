@@ -20,6 +20,9 @@ Das Orgateam macht das Turnier ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 {{< callout type="error" >}}
 Ihr Browser unterstüzt kein Java Script. Bitte aktivieren Sie Java Script.
 {{< /callout >}}
+
+## Startrangliste (ohne JS)
+Die Tabelle ist auch Live und aktuell. Für das Design und Rendering braucht es JS.
 <iframe src="https://register.ilmenauer-schachverein.de/open/startrangliste.php" width="100%" height="1200px" style="border: none;"></iframe>
 
 </noscript>
