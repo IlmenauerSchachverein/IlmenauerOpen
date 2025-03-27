@@ -16,7 +16,6 @@ Das Orgateam macht das Turnier ehrenamtlich. Daher kann es durchaus 3 bis 4 Tage
 
 - {{< commit-info >}}
 
-<hr>
 
 <div id="startrangliste">
 </div>
