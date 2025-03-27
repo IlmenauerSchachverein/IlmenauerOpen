@@ -34,4 +34,3 @@ fetch("https://register.ilmenauer-schachverein.de/open/startrangliste.php")
     console.error(error);
   });
 </script>
-
