@@ -1,0 +1,115 @@
+name: Build & Deploy IlmenauerOpen
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  update:
+    name: Update Go/Hugo Modules & Commit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dos2unix
+
+      - name: Update Go Modules
+        run: |
+          go mod edit -go=$(go version | awk '{print $3}' | sed 's/go//')
+          hugo mod get github.com/imfing/hextra
+          hugo mod get github.com/gethinode/mod-flexsearch
+          go mod tidy
+
+      - name: Run build.sh
+        run: |
+          dos2unix ./build.sh
+          chmod +x ./build.sh
+          ./build.sh
+
+      - name: Git Commit & Push
+        run: |
+          git config user.name "CI Pipeline"
+          git config user.email "info@ilmenauer-schachverein.de"
+          git add .
+          git commit -m "Automatic update of Go, Hugo and Go dependencies [skip ci]" || echo "No changes to commit"
+          git push origin main
+
+  build:
+    name: Build Hugo Site
+    needs: update
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Site
+        run: |
+          dos2unix ./build.sh
+          chmod +x ./build.sh
+          ./build.sh
+          hugo --gc --minify --enableGitInfo
+
+      - name: Upload Public Folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: public/
+
+  deploy:
+    name: Deploy via rsync as root
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass rsync
+
+      - name: Deploy via rsync
+        run: |
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "rm -rf /var/www/open/*"
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open"
+          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ root@${{ secrets.SSHSERVER }}:/var/www/open/
+
+  mirror-to-gitlab:
+    name: Mirror to GitLab
+    needs: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Push to GitLab
+        run: |
+          git config --global user.name "CI Pipeline"
+          git config --global user.email "info@ilmenauer-schachverein.de"
+          git remote add gitlab "https://oauth2:${{ secrets.GITLAB_PAT }}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
+          git push --force gitlab main
