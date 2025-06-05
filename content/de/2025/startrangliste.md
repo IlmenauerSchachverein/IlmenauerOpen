@@ -15,7 +15,6 @@ Für Spieler, bei denen in der Titelspalte ein ‚B‘ vermerkt ist, wurde das S
 
 | TlnNr | Teilnehmer | Titel | ELO | NWZ | Attr. | Verein/Ort | Land | Geburt | FideKenn. | PKZ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-| TlnNr | Teilnehmer | Titel | ELO | NWZ | Attr. | Verein/Ort | Land | Geburt | FideKenn. | PKZ |
 | 1 | Jandke,Manfred |  | 2093 | 2056 | M | SSG Lübbenau e.V. | GER | 1953 | 4642074 | 10094165 |
 | 2 | Eichenauer,Pascal |  | 2048 | 2054 | M | Ilmenauer SV | GER | 1999 | 12991848 | 10276112 |
 | 3 | Geißhirt,Marco |  | 1968 | 1984 | M | Ilmenauer SV | GER | 1990 | 4610563 | 10059257 |
