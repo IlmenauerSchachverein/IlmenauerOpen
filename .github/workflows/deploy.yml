@@ -2,7 +2,7 @@ name: Build & Deploy IlmenauerOpen
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   update:
@@ -18,12 +18,12 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: 'stable'
+          go-version: "stable"
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           extended: true
 
       - name: Install Dependencies
@@ -63,8 +63,10 @@ jobs:
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           extended: true
+      - name: Install dos2unix
+        run: sudo apt-get update && sudo apt-get install -y dos2unix
 
       - name: Build Site
         run: |
