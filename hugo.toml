@@ -75,9 +75,6 @@ enableGitInfo = true
     [menu.main.params]
       icon = "instagram"
 
-[services.googleAnalytics]
-  ID = "G-H4QPZR8HZY"
-
 [params]
   disableToc = true
 
