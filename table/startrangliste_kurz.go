@@ -21,7 +21,7 @@ func convertRanglisteToMarkdown(rangliste string) string {
 	if len(cleanLines) < 1 {
 		return rangliste
 	}
-	headers := []string{"Rang", "Teilnehmer", "Titel", "TWZ", "Attr.", "Verein", "Land", "S", "R", "V", "Punkte", "Buchh", "SoBerg"}
+	headers := []string{"Rang", "Teilnehmer", "Bezahlt", "TWZ", "Attr.", "Verein", "Land", "S", "R", "V", "Punkte", "Buchh", "SoBerg"}
 	mdLines := []string{
 		"| " + strings.Join(headers, " | ") + " |",
 		"| " + strings.Repeat("--- | ", len(headers)),
