@@ -21,7 +21,7 @@ func convertRanglisteToMarkdown(rangliste string) string {
 	if len(cleanLines) < 1 {
 		return rangliste
 	}
-	headers := []string{"Rang", "Teilnehmer", "Bezahlt", "TWZ", "Attr.", "Verein", "Land", "S", "R", "V", "Punkte", "Buchh", "SoBerg"}
+	headers := []string{"Rang", "Teilnehmer", "Titel", "TWZ", "Attr.", "Verein", "Land", "S", "R", "V", "Punkte", "Buchh", "SoBerg"}
 	mdLines := []string{
 		"| " + strings.Join(headers, " | ") + " |",
 		"| " + strings.Repeat("--- | ", len(headers)),
@@ -60,7 +60,7 @@ func convertStartranglisteToMarkdown(startrangliste string) string {
 			cleanLines = append(cleanLines, line)
 		}
 	}
-	headers := []string{"TlnNr", "Teilnehmer", "Titel", "ELO", "NWZ", "Attr.", "Verein/Ort", "Land", "Geburt", "FideKenn.", "PKZ"}
+	headers := []string{"TlnNr", "Teilnehmer", "Bezahlt", "ELO", "NWZ", "Attr.", "Verein/Ort", "Land", "Geburt", "FideKenn.", "PKZ"}
 	mdLines := []string{
 		"| " + strings.Join(headers, " | ") + " |",
 		"| " + strings.Repeat("--- | ", len(headers)),
@@ -87,7 +87,7 @@ func convertStartranglisteKurzToMarkdown(startranglisteKurz string) string {
 			cleanLines = append(cleanLines, line)
 		}
 	}
-	headers := []string{"TlnNr", "Teilnehmer", "Titel", "TWZ", "Attr.", "Verein/Ort", "Land", "Geburt"}
+	headers := []string{"TlnNr", "Teilnehmer", "Bezahlt", "TWZ", "Attr.", "Verein/Ort", "Land", "Geburt"}
 	mdLines := []string{
 		"| " + strings.Join(headers, " | ") + " |",
 		"| " + strings.Repeat("--- | ", len(headers)),
