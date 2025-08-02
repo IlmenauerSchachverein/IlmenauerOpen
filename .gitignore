@@ -9,6 +9,7 @@ resources/
 
 # Editor
 .vscode/
+.idea/
 
 # ChessBase 
 *.ini
