@@ -24,7 +24,7 @@ Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) v
 | 12 | Wagner,Martin | B | 1820 | 1685 | M | SG Limbach-Oberfrohna | GER | 1994 | 533015740 | 10876631 |
 | 13 | Wüstehube,Harry | B | 1889 | 1666 | M | SAbt TG 1949 Wehlheiden | GER | 1955 | 24614084 | 10247588 |
 | 14 | Drewes,Thomas | B | 1785 | 1566 | M | SV Würzburg von 1865 e.V. | GER | 1951 | 24613215 | 10039513 |
-| 15 | Jüngling,Leonard |  | 1540 | 1510 | M | Heilbronner SV | GER | 2014 | 34669116 | 10768775 |
+| 15 | Jüngling,Leonard | B | 1540 | 1510 | M | Heilbronner SV | GER | 2014 | 34669116 | 10768775 |
 | 16 | Eisenbach,Markus,Dr. |  | 1888 | 1505 | M | Ilmenauer SV | GER | 1984 | 34663630 | 10043553 |
 | 17 | Glaser,Bernhard |  | 1816 | 1498 | M | ESV Lok Sömmerda | GER | 1960 | 24638331 | 10061931 |
 | 18 | Brandt,Wolfgang | B | 1747 | 1489 | M | SV Gehren 1911 | GER | 1960 | 16202465 | 10257345 |
