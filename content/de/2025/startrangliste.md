@@ -9,9 +9,6 @@ Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) v
 {{< /callout >}}
 
 
-2. Ilmenauer Open 2025
-Ilmenauer Schachverein
-
 <startrangliste>
 Teilnehmerliste: (Sortiert nach Spielernummer)
 TlnNr	Teilnehmer	Titel	ELO	NWZ	Attr.	Verein/Ort	Land	Geburt	FideKenn.	PKZ
@@ -40,8 +37,9 @@ TlnNr	Teilnehmer	Titel	ELO	NWZ	Attr.	Verein/Ort	Land	Geburt	FideKenn.	PKZ
 23	Glaser,Bernhard		1816	1498	M	ESV Lok Sömmerda	GER	1960	24638331	10061931
 24	Brandt,Wolfgang	B	1747	1489	M	SV Gehren 1911	GER	1960	16202465	10257345
 25	Laß,Matteo		1594	1445	M	1. Eichsfelder Sportclub - Abt.	GER	2015	533019940	10793615
-26	Zentgraf,Raphael		1594	1348	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
-27	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
-28	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
-29	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
-</startrangliste>
+26	Rexhausen,Mika			1373	M	1. Eichsfelder Sportclub - Abt.	GER	2013	34681752	10813681
+27	Zentgraf,Raphael		1594	1348	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
+28	Rauhut,Max		1523	1290	M	FC Deetz e.V.	GER	2013	16292545	10741177
+29	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
+30	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
+31	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
