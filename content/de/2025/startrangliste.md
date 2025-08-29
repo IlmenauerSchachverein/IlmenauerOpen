@@ -10,8 +10,6 @@ Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) v
 
 
 <startrangliste>
-Teilnehmerliste: (Sortiert nach Spielernummer)
-TlnNr	Teilnehmer	Titel	ELO	NWZ	Attr.	Verein/Ort	Land	Geburt	FideKenn.	PKZ
 1	Philipp,Mathias	CM	2144	2170	M	SSV Vimaria 91 Weimar	GER	1999	12958883	10269201
 2	Jandke,Manfred		2093	2056	M	SSG Lübbenau e.V.	GER	1953	4642074	10094165
 3	Eichenauer,Pascal		2048	2054	M	Ilmenauer SV	GER	1999	12991848	10276112
