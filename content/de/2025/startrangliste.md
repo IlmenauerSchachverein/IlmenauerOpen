@@ -43,3 +43,4 @@ TlnNr	Teilnehmer	Titel	ELO	NWZ	Attr.	Verein/Ort	Land	Geburt	FideKenn.	PKZ
 29	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
 30	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
 31	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
+</startrangliste>
