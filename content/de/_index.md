@@ -33,11 +33,10 @@ Die DGT Bretter finden Sie unter [Partien](/2025/partien). Dort können Sie auch
 ### Wichtige Informationen
 
 {{< cards >}}
-{{< card link="2025/ausschreibung" title="Ausschreibung" icon="user" >}}
-{{< card link="2025/startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="2025/anmeldung" title="Anmeldung" icon="user" target="_blank">}}
+{{< card link="../ausschreibung" title="Ausschreibung" icon="user" >}}
+{{< card link="../startrangliste" title="Startrangliste" icon="user" >}}
+{{< card link="../anmeldung" title="Anmeldung" icon="user" target="_blank">}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
-{{< card link="2025/partien" title="Partien" icon="user" tag="DGT Bretter und PGN Dateien" >}}
 {{< /cards >}}
 
 ### Paarungen aller Runden
