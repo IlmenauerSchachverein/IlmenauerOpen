@@ -23,6 +23,8 @@ type: docs
 {{< callout type="info" >}}
 Die Tabellen des Turniers 2024 wurden ins Archiv verschoben. Sie können sie über das Menü oder direkt  [im Archiv](../2024/) einsehen.
 
+{{< /callout >}}
+
 ## Open
 
 ### Wichtige Informationen
