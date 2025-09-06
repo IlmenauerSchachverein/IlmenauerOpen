@@ -30,10 +30,6 @@ enableGitInfo = true
     pageRef = "/2025/anmeldung"
     weight = 1
   [[menu.main]]
-    name = "DGT-Bretter"
-    pageRef = "/2025/partien"
-    weight = 2
-  [[menu.main]]
     name = "Ausschreibung"
     pageRef = "/2025/ausschreibung"
     weight = 1
