@@ -9,7 +9,7 @@ Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) v
 {{< /callout >}}
 
 {{< callout type="important" icon="sparkles" >}}
-Letztes Update: nie
+Letztes Update: Sun Sep 7 14:49:19 2025 +0200
 {{< /callout >}}
 
 <startrangliste>
