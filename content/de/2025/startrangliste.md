@@ -41,15 +41,15 @@ Letztes Update: Sun Sep 7 14:49:19 2025 +0200
 26	Brandt,Wolfgang	B	1747	1489	M	SV Gehren 1911	GER	1960	16202465	10257345
 27	Laß,Matteo		1594	1445	M	1. Eichsfelder Sportclub - Abt.	GER	2015	533019940	10793615
 28	Hübner,Jakob		1684	1410	M	SG Blau-Weiß Stadtilm	GER	2015	34684107	10844793
-29	Wäldchen,Bruno				M	Ilmenauer SV	GER	2015	533006024	10870459
-30	Rexhausen,Mika			1373	M	1. Eichsfelder Sportclub - Abt.	GER	2013	34681752	10813681
-31	Zentgraf,Raphael		1594	1348	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
-32	Hübner,Paul		1638	1333	M	SG Blau-Weiß Stadtilm	GER	2013	34684115	10844791
-33	Stecay,Anja Christina,Dr.		1541	1294	W	SF Neuberg	GER	1976	34634193	10792493
-34	Rauhut,Max		1523	1290	M	FC Deetz e.V.	GER	2013	16292545	10741177
-35	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
-36	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
-37	Eßers,Mathilda Marie		1450	1141	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
-38	Wäldchen,Anna			1106	W	Ilmenauer SV	GER	2013	533005435	10845229
-39	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
+29	Rexhausen,Mika			1373	M	1. Eichsfelder Sportclub - Abt.	GER	2013	34681752	10813681
+30	Zentgraf,Raphael		1594	1348	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
+31	Hübner,Paul		1638	1333	M	SG Blau-Weiß Stadtilm	GER	2013	34684115	10844791
+32	Stecay,Anja Christina,Dr.		1541	1294	W	SF Neuberg	GER	1976	34634193	10792493
+33	Rauhut,Max		1523	1290	M	FC Deetz e.V.	GER	2013	16292545	10741177
+34	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
+35	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
+36	Eßers,Mathilda Marie		1450	1141	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
+37	Wäldchen,Anna			1106	W	Ilmenauer SV	GER	2013	533005435	10845229
+38	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
+39	Wäldchen,Bruno				M	Ilmenauer SV	GER	2015	533006024	10870459
 </startrangliste>
