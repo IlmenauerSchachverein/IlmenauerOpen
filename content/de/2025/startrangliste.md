@@ -8,6 +8,9 @@ type: docs
 Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) verwendet, wobei die Elo-Zahl unberücksichtigt bleibt.
 {{< /callout >}}
 
+{{< callout type="important" icon="sparkles" >}}
+Letztes Update: nie
+{{< /callout >}}
 
 <startrangliste>
 1	Philipp,Mathias	CM	2144	2170	M	SSV Vimaria 91 Weimar	GER	1999	12958883	10269201
