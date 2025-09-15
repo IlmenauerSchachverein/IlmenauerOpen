@@ -4,12 +4,16 @@ toc: false
 type: docs
 ---
 
+{{< callout type="error" >}}
+Am Mittwoch, den 17.09.2025, und am Donnerstag, den 18.09.2025, führen wir Wartungsarbeiten am Server durch. In diesem Zeitraum kann es daher zu Einschränkungen oder Störungen kommen.
+{{< /callout >}}
+
 {{< callout type="info" >}}
 Dieses Jahr wird die DWZ (Deutsche Wertungszahl) als Turnierwertungszahl (TWZ) verwendet, wobei die Elo-Zahl unberücksichtigt bleibt.
 {{< /callout >}}
 
 {{< callout type="important" icon="sparkles" >}}
-Letztes Update: Sat Sep 13 10:15:27 2025 +0200
+Letztes Update:  Mon Sep 15 21:02:28 2025 +0200
 {{< /callout >}}
 
 <startrangliste>

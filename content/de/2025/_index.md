@@ -11,6 +11,9 @@ type: docs
     }
   }
 </style>
+{{< callout type="error" >}}
+Am Mittwoch, den 17.09.2025, und am Donnerstag, den 18.09.2025, führen wir Wartungsarbeiten am Server durch. In diesem Zeitraum kann es daher zu Einschränkungen oder Störungen kommen.
+{{< /callout >}}
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; padding-right: 20px;">

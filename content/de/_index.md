@@ -3,6 +3,9 @@ title: 2. Ilmenauer Open 2025
 toc: false
 type: docs
 ---
+{{< callout type="error" >}}
+Am Mittwoch, den 17.09.2025, und am Donnerstag, den 18.09.2025, führen wir Wartungsarbeiten am Server durch. In diesem Zeitraum kann es daher zu Einschränkungen oder Störungen kommen.
+{{< /callout >}}
 
 <style>
   @media (max-width: 600px) {
