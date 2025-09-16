@@ -50,12 +50,11 @@ Letztes Update:  Mon Sep 15 21:02:28 2025 +0200
 31	Zentgraf,Raphael		1594	1348	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
 32	Hübner,Paul	B	1638	1333	M	SG Blau-Weiß Stadtilm	GER	2013	34684115	10844791
 33	Stecay,Anja Christina,Dr.	B	1541	1294	W	SF Neuberg	GER	1976	34634193	10792493
-34	Rauhut,Max		1523	1290	M	FC Deetz e.V.	GER	2013	16292545	10741177
-35	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
-36	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
-37	Eßers,Mathilda Marie	B	1450	1141	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
-38	Wäldchen,Anna	B		1106	W	Ilmenauer SV	GER	2013	533005435	10845229
-39	Heinz,Uwe			999	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
-40	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
-41	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
+34	Balthasar,Johann		1571	1278	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
+35	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
+36	Eßers,Mathilda Marie	B	1450	1141	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
+37	Wäldchen,Anna	B		1106	W	Ilmenauer SV	GER	2013	533005435	10845229
+38	Heinz,Uwe			999	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
+39	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
+40	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
 </startrangliste>
