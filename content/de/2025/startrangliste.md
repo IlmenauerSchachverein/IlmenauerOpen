@@ -55,6 +55,7 @@ Letztes Update:  Mon Sep 15 21:02:28 2025 +0200
 36	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
 37	Eßers,Mathilda Marie	B	1450	1141	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
 38	Wäldchen,Anna	B		1106	W	Ilmenauer SV	GER	2013	533005435	10845229
-39	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
-40	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
+39	Heinz,Uwe			999	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
+40	Winger,Frank			832	M	Ilmenauer SV	GER	1964	16233069	10651767
+41	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
 </startrangliste>
