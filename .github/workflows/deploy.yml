@@ -75,7 +75,7 @@ jobs:
           path: public/
 
   deploy:
-    name: Deploy via SFTP (webuser, no root key)
+    name: Deploy via SFTP 
     needs: build
     runs-on: ubuntu-latest
 
