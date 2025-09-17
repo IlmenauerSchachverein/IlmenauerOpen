@@ -68,14 +68,14 @@ jobs:
           ./build.sh
           hugo --gc --minify --enableGitInfo
 
-      - name: Upload Public Folder
+      - name: Upload Public Folder as artifact
         uses: actions/upload-artifact@v4
         with:
           name: public
           path: public/
 
   deploy:
-    name: Deploy via rsync (webuser)
+    name: Deploy (root cleanup + SFTP upload as webuser)
     needs: build
     runs-on: ubuntu-latest
 
@@ -85,14 +85,29 @@ jobs:
           name: public
           path: public
 
-      - name: Install sshpass & rsync
+      - name: Install sshpass & sftp
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
 
-      - name: Deploy via rsync
+      # 1) Cleanup via root (rekursives Löschen + (neu) Anlegen des Zielpfads)
+      - name: Remote cleanup (root)
         run: |
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} "rm -rf /var/www/open.ilmenauer-schachverein.de/*"
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open.ilmenauer-schachverein.de"
-          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ webuser@${{ secrets.SSHSERVER }}:/var/www/open.ilmenauer-schachverein.de/
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "\
+            rm -rf /var/www/open.ilmenauer-schachverein.de/* && \
+            mkdir -p /var/www/open.ilmenauer-schachverein.de \
+          "
+
+      # 2) Upload via SFTP (webuser) – ACHTUNG: im Chroot ist '/' == '/var/www'
+      #    Daher ist das Remote-Ziel '/open.ilmenauer-schachverein.de/', NICHT '/var/www/open...'
+      - name: Upload via SFTP (webuser)
+        run: |
+          # We are in the repo root; the artifact is in ./public
+          # Use a here-doc to feed SFTP commands. The shell expands 'public/*' locally.
+          sshpass -p "${{ secrets.SSHPW }}" sftp -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} <<'SFTP'
+          mkdir /open.ilmenauer-schachverein.de
+          cd /open.ilmenauer-schachverein.de
+          put -r public/*
+          bye
+          SFTP
 
   mirror-to-gitlab:
     name: Mirror to GitLab
