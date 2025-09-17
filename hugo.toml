@@ -98,9 +98,3 @@ googleAnalytics = "G-BFH7CVL2EJ"
   changefreq = "daily"
   priority = 0.5
   filename = "sitemap.xml"
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    respectDoNotTrack = true
-    disable = false
