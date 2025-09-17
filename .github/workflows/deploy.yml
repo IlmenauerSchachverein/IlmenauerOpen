@@ -74,7 +74,7 @@ jobs:
           path: public/
 
   deploy:
-    name: Deploy via rsync as root
+    name: Deploy via rsync as webuser
     needs: build
     runs-on: ubuntu-latest
 
@@ -89,9 +89,9 @@ jobs:
 
       - name: Deploy via rsync
         run: |
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "rm -rf /var/www/open.ilmenauer-schachverein.de/*"
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open.ilmenauer-schachverein.de"
-          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ root@${{ secrets.SSHSERVER }}:/var/www/open.ilmenauer-schachverein.de/
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} "rm -rf /var/www/open.ilmenauer-schachverein.de/*"
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open.ilmenauer-schachverein.de"
+          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ webuser@${{ secrets.SSHSERVER }}:/var/www/open.ilmenauer-schachverein.de/
 
   mirror-to-gitlab:
     name: Mirror to GitLab
