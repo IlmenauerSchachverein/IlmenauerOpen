@@ -75,7 +75,7 @@ jobs:
           path: public/
 
   deploy:
-    name: Deploy (root cleanup + SFTP upload)
+    name: Deploy via SFTP (webuser, no root key)
     needs: build
     runs-on: ubuntu-latest
 
@@ -85,31 +85,22 @@ jobs:
           name: public
           path: public
 
-      - name: Install clients
+      - name: Install lftp
         run: |
           sudo apt-get update
-          sudo apt-get install -y openssh-client sshpass
+          sudo apt-get install -y lftp
 
-      - name: Load root SSH key
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.ROOT_SSH_KEY }}
-
-      - name: Remote cleanup (root via key)
+      - name: Upload with SFTP mirror (webuser)
+        env:
+          SSHPW: ${{ secrets.SSHPW }}
+          SSHSERVER: ${{ secrets.SSHSERVER }}
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "\
-            rm -rf /var/www/open.ilmenauer-schachverein.de/* && \
-            mkdir -p /var/www/open.ilmenauer-schachverein.de \
-          "
-
-      - name: Upload via SFTP (webuser with password)
-        run: |
-          sshpass -p "${{ secrets.SSHPW }}" sftp -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} <<'SFTP'
-          mkdir /open.ilmenauer-schachverein.de
-          cd /open.ilmenauer-schachverein.de
-          put -r public/*
-          bye
-          SFTP
+          lftp -u webuser,"$SSHPW" sftp://$SSHSERVER -e "\
+            set sftp:auto-confirm yes; \
+            set net:max-retries 2; \
+            set net:timeout 30; \
+            mirror --reverse --delete --verbose --only-newer --parallel=4 public /open.ilmenauer-schachverein.de; \
+            bye"
 
   mirror-to-gitlab:
     name: Mirror to GitLab
@@ -127,4 +118,3 @@ jobs:
           git config --global user.email "info@ilmenauer-schachverein.de"
           git remote add gitlab "https://oauth2:${{ secrets.GITLAB_PAT }}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
           git push --force gitlab main
- 
