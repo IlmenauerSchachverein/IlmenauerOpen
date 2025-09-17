@@ -89,9 +89,9 @@ jobs:
 
       - name: Deploy via rsync
         run: |
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "rm -rf /var/www/open/*"
-          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open"
-          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ root@${{ secrets.SSHSERVER }}:/var/www/open/
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "rm -rf /var/www/open.ilmenauer-schachverein.de/*"
+          sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "mkdir -p /var/www/open.ilmenauer-schachverein.de"
+          sshpass -p "${{ secrets.SSHPW }}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ root@${{ secrets.SSHSERVER }}:/var/www/open.ilmenauer-schachverein.de/
 
   mirror-to-gitlab:
     name: Mirror to GitLab
