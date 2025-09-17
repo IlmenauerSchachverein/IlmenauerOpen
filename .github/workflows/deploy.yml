@@ -88,7 +88,6 @@ jobs:
       - name: Install sshpass & sftp
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
 
-      # 1) Cleanup via root (rekursives Löschen + (neu) Anlegen des Zielpfads)
       - name: Remote cleanup (root)
         run: |
           sshpass -p "${{ secrets.SSHPW }}" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSHSERVER }} "\
@@ -96,12 +95,8 @@ jobs:
             mkdir -p /var/www/open.ilmenauer-schachverein.de \
           "
 
-      # 2) Upload via SFTP (webuser) – ACHTUNG: im Chroot ist '/' == '/var/www'
-      #    Daher ist das Remote-Ziel '/open.ilmenauer-schachverein.de/', NICHT '/var/www/open...'
       - name: Upload via SFTP (webuser)
         run: |
-          # We are in the repo root; the artifact is in ./public
-          # Use a here-doc to feed SFTP commands. The shell expands 'public/*' locally.
           sshpass -p "${{ secrets.SSHPW }}" sftp -o StrictHostKeyChecking=no webuser@${{ secrets.SSHSERVER }} <<'SFTP'
           mkdir /open.ilmenauer-schachverein.de
           cd /open.ilmenauer-schachverein.de
