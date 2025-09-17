@@ -11,9 +11,6 @@ type: docs
     }
   }
 </style>
-{{< callout type="error" >}}
-Derzeit führen wir Wartungsarbeiten durch. Eine Anmeldung ist daher bis Donnerstag, den 18.09., etwa 15:00 Uhr, nicht möglich. Wir danken Ihnen für Ihr Verständnis.
-{{< /callout >}}
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; padding-right: 20px;">
