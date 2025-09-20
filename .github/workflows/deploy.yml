@@ -112,4 +112,4 @@ jobs:
           git config --global user.name "CI Pipeline"
           git config --global user.email "info@ilmenauer-schachverein.de"
           git remote add gitlab "https://oauth2:${{ secrets.GITLAB_PAT }}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
-          git push --force gitlab main
+          git push --force gitlab main 
