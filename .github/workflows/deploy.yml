@@ -90,17 +90,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y lftp
 
-      - name: Upload with SFTP mirror (webuser)
+      - name: Upload with SFTP mirror
         env:
           SSHPW: ${{ secrets.SSHPW }}
           SSHSERVER: ${{ secrets.SSHSERVER }}
         run: |
-          lftp -u webuser,"$SSHPW" sftp://$SSHSERVER -e "\
-            set sftp:auto-confirm yes; \
-            set net:max-retries 2; \
-            set net:timeout 30; \
-            mirror --reverse --delete --verbose --only-newer --parallel=4 public /open.ilmenauer-schachverein.de; \
-            bye"
+          lftp -u webuser,"$SSHPW" "sftp://$SSHSERVER" -e 'set sftp:auto-confirm yes; set net:max-retries 2; set net:timeout 30; mirror --reverse --delete --verbose --only-newer --parallel=4 public /open.ilmenauer-schachverein.de; bye'
 
   mirror-to-gitlab:
     name: Mirror to GitLab
