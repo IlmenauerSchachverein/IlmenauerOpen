@@ -96,20 +96,3 @@ jobs:
           SSHSERVER: ${{ secrets.SSHSERVER }}
         run: |
           lftp -u webuser,"$SSHPW" "sftp://$SSHSERVER" -e 'set sftp:auto-confirm yes; set net:max-retries 2; set net:timeout 30; mirror --reverse --delete --verbose --only-newer --parallel=4 public /var/www/open.ilmenauer-schachverein.de; bye'
-
-  mirror-to-gitlab:
-    name: Mirror to GitLab
-    needs: deploy
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-
-      - name: Push to GitLab
-        run: |
-          git config --global user.name "CI Pipeline"
-          git config --global user.email "info@ilmenauer-schachverein.de"
-          git remote add gitlab "https://oauth2:${{ secrets.GITLAB_PAT }}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
-          git push --force gitlab main 
