@@ -5,7 +5,7 @@ type: docs
 ---
 
 {{< callout type="important" icon="sparkles" >}}    
-Letztes Update:  Sat Sep 27 05:30:09 2025 +0200
+Letztes Update:  Thu Oct 2 19:15:00 2025 +0200
 {{< /callout >}}
 
 <startrangliste>
