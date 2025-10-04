@@ -44,13 +44,14 @@ Letztes Update:  Thu Oct 2 19:15:00 2025 +0200
 33	Hübner,Paul	B	1638	1383	M	SG Blau-Weiß Stadtilm	GER	2013	34684115	10844791
 34	Laß,Matteo		1630	1446	M	1. Eichsfelder Sportclub - Abt.	GER	2015	533019940	10793615
 35	Zentgraf,Raphael		1606	1372	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
-36	Balthasar,Johann		1571	1336	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
-37	Jüngling,Leonard	B	1559	1487	M	Heilbronner SV	GER	2014	34669116	10768775
-38	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
-39	Stecay,Anja Christina,Dr.	B	1542	1328	W	SF Neuberg	GER	1976	34634193	10792493
-40	Eßers,Mathilda Marie	B	1450	1223	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
-41	Wäldchen,Anna	B		1116	W	Ilmenauer SV	GER	2013	533005435	10845229
-42	Heinz,Uwe			1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
-43	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
-44	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
+36	Sriram,Aumkar		1507	1577	M	SV 1947 Walldorf	GER	2016	33460477	10795393
+37	Balthasar,Johann		1571	1336	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
+38	Jüngling,Leonard	B	1559	1487	M	Heilbronner SV	GER	2014	34669116	10768775
+39	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
+40	Stecay,Anja Christina,Dr.	B	1542	1328	W	SF Neuberg	GER	1976	34634193	10792493
+41	Eßers,Mathilda Marie	B	1450	1223	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
+42	Wäldchen,Anna	B		1116	W	Ilmenauer SV	GER	2013	533005435	10845229
+43	Heinz,Uwe			1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
+44	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
+45	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
 </startrangliste>
