@@ -4,7 +4,7 @@ type: docs
 toc: false
 ---
 
-{{< callout type="important" icon="sparkles" >}}    
+{{< callout type="info" >}}    
 Falls Sie keine ELO-Zahl besitzen, geben Sie bitte den Wert 0 in das entsprechende Feld ein. Falls Sie keine DWZ besitzen, tragen Sie ebenfalls den Wert 0 ein.
 {{< /callout >}}
 
