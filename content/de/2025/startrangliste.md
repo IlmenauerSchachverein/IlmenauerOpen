@@ -5,10 +5,10 @@ type: docs
 ---
 
 {{< callout type="important" icon="sparkles" >}}    
-Letztes Update:  Sat Oct 4 11:42:40 2025 +0200
+Letztes Update:  Mon Oct 6 15:10:12 2025 +0200
 {{< /callout >}}
 
-<startrangliste>
+<startrangliste>    
 1	Philipp,Mathias	CM	2164	2184	M	SSV Vimaria 91 Weimar	GER	1999	12958883	10269201
 2	Eichenauer,Pascal		2048	2089	M	Ilmenauer SV	GER	1999	12991848	10276112
 3	Jandke,Manfred		2081	2021	M	SSG Lübbenau e.V.	GER	1953	4642074	10094165
