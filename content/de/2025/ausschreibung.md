@@ -39,7 +39,7 @@ Google Maps: [https://maps.app.goo.gl/rZMkYBArJcAaS7RU7](https://maps.app.goo.gl
 | 30.10.2025 | 15:00        | 2. Runde      |
 | 31.11.2025 | 09:00        | 3. Runde      |
 | 31.11.2025 | 15:00        | 4. Runde      |
-| 31.11.2025 | 20:15        | Blitz Turnier |
+| 31.11.2025 | 20:15        | Blitzturnier |
 | 01.11.2025 | 09:00        | 5. Runde      |
 | 01.11.2025 | 15:00        | 6. Runde      |
 | 02.11.2025 | 09:00        | 7. Runde      |
@@ -75,7 +75,7 @@ Google Maps: [https://maps.app.goo.gl/rZMkYBArJcAaS7RU7](https://maps.app.goo.gl
 
 ## Startgeld
 
-- Die Anmeldung inkl. Geldeingang muss bis zum 12.10.2025 erfolgt sein
+- Die Anmeldung inkl. Geldeingang muss bis zum ~~12.10.2025~~ 20.10.2025 erfolgt sein
 - Maximal 80 Teilnehmer (Reihenfolge der Anmeldungen)
 - Mit der Anmeldung wird einer Photoerlaubnis zugestimmt.
 - Formular für die Anmeldung: [Anmeldung](https://open25.ilmenauer-schachverein.de/anmeldung/)
