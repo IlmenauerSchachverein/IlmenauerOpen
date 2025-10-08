@@ -54,7 +54,8 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 43	Stecay,Anja Christina,Dr.	B	1542	1328	W	SF Neuberg	GER	1976	34634193	10792493
 44	Eßers,Mathilda Marie	B	1450	1223	W	SG Blau-Weiß Stadtilm	GER	2014	34684093	10794221
 45	Wäldchen,Anna	B		1116	W	Ilmenauer SV	GER	2013	533005435	10845229
-46	Heinz,Uwe			1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
+46	Heinz,Uwe	B		1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
 47	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
 48	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
+
 </startrangliste>
