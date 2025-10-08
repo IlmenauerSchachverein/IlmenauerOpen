@@ -18,7 +18,7 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 7	Geißhirt,Marco		1968	1990	M	Ilmenauer SV	GER	1990	4610563	10059257
 8	Mehlhorn,Uwe	B	1968	1939	M	SG Blau-Weiß Stadtilm	GER	1961	4619552	10139500
 9	Aniol,Adrian	B	1888	1959	M	VfL 1990 Gera	GER	2005	16229967	10406227
-10	Junge,Mattheo Gabriel	B	1946	1863	M	SV Schott Jena	GER	2012	34605908	10735175
+10	Junge,Mattheo Gabriel		1946	1863	M	SV Schott Jena	GER	2012	34605908	10735175
 11	Held,Martin		1936	1858	M	Erfurter Schachklub	GER	1993	12902039	10079211
 12	Wüstehube,Harry	B	1889	1699	M	SAbt TG 1949 Wehlheiden	GER	1955	24614084	10247588
 13	Eisenbach,Markus,Dr.		1888	1530	M	Ilmenauer SV	GER	1984	34663630	10043553
@@ -44,7 +44,7 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 33	Piske,Justus	B		1664	M	SC Suhl	GER	2006	533057257	10850385
 34	Kaße,Julian	B	1645	1521	M	Schachclub Turm Erfurt	GER	2006	533011346	10588483
 35	Hübner,Paul	B	1638	1383	M	SG Blau-Weiß Stadtilm	GER	2013	34684115	10844791
-36	Laß,Matteo		1630	1446	M	1. Eichsfelder Sportclub - Abt.	GER	2015	533019940	10793615
+36	Laß,Matteo	B	1630	1446	M	1. Eichsfelder Sportclub - Abt.	GER	2015	533019940	10793615
 37	Zentgraf,Raphael		1606	1372	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
 38	Sriram,Aumkar		1507	1577	M	SV 1947 Walldorf	GER	2016	33460477	10795393
 39	Balthasar,Johann		1571	1336	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
@@ -57,5 +57,6 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 46	Heinz,Uwe	B		1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
 47	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
 48	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
+
 
 </startrangliste>
