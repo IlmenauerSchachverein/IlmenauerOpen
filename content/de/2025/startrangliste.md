@@ -48,7 +48,7 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 37	Zentgraf,Raphael		1606	1372	M	SG Blau-Weiß Stadtilm	GER	2015	34684166	10814543
 38	Sriram,Aumkar		1507	1577	M	SV 1947 Walldorf	GER	2016	33460477	10795393
 39	Balthasar,Johann		1571	1336	M	Schachclub Turm Erfurt	GER	2013	533015678	10809961
-40	Mehner,Joerg	B	1570		M	vereinslos	GER	1973	34613331	
+40	Mehner,Joerg	B	1570		M	vereinslos	GER	1973	34613331	00000000
 41	Jüngling,Leonard	B	1559	1487	M	Heilbronner SV	GER	2014	34669116	10768775
 42	Pantleon,Florian		1544	1226	M	SG Bettringen	GER	1999	533016836	10535931
 43	Stecay,Anja Christina,Dr.	B	1542	1328	W	SF Neuberg	GER	1976	34634193	10792493
@@ -57,6 +57,4 @@ Letztes Update:  Tue Oct 7 00:05:21 2025 +0200
 46	Heinz,Uwe	B		1018	M	USV Erfurt Abteilung Schach	GER	1973	533015910	10760057
 47	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
 48	Wäldchen,Bruno	B			M	Ilmenauer SV	GER	2015	533006024	10870459
-
-
 </startrangliste>
