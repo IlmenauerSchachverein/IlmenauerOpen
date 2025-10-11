@@ -4,7 +4,6 @@ type: docs
 toc: false
 ---
 
-<br><br>
 {{< cards >}}
 {{< card link="/2025/ilmo-2025.pdf" title="Download Ausschreibung als PDF" icon="user" target="_blank">}}
 {{< /cards >}}
