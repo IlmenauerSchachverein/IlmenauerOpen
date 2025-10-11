@@ -3,10 +3,11 @@ title: Ausschreibung - Open
 type: docs
 toc: false
 ---
+
 <br><br>
-<div class="mb-8"> 
-{{< hextra/hero-button text="Download Ausschreibung als PDF" link="/2025/ilmo-2025.pdf" >}}
-</div>
+{{< cards >}}
+{{< card link="/2025/ilmo-2025.pdf" title="Download Ausschreibung als PDF" icon="user" target="_blank">}}
+{{< /cards >}}
 
 ## Datum
 
