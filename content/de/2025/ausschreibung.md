@@ -82,7 +82,7 @@ Google Maps: [https://maps.app.goo.gl/rZMkYBArJcAaS7RU7](https://maps.app.goo.gl
 - Die Anmeldung inkl. Geldeingang muss bis zum ~~12.10.2025~~ 20.10.2025 erfolgt sein
 - Maximal 80 Teilnehmer (Reihenfolge der Anmeldungen)
 - Mit der Anmeldung wird einer Photoerlaubnis zugestimmt.
-- Formular für die Anmeldung: [Anmeldung](https://open25.ilmenauer-schachverein.de/anmeldung/)
+- Formular für die Anmeldung: [Anmeldung](https://open.ilmenauer-schachverein.de/2025/anmeldung/)
 
 ## Rückerstattung
 
