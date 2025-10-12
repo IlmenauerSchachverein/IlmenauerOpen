@@ -81,7 +81,7 @@ googleAnalytics = "G-BFH7CVL2EJ"
     displayLogo = true
 
   [params.theme]
-    default = "light"
+    default = "system"
 
   [params.footer]
     displayCopyright = true
