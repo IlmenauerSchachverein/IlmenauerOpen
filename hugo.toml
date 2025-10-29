@@ -28,8 +28,8 @@ googleAnalytics = "G-BFH7CVL2EJ"
 
 [menu]
   [[menu.main]]
-    name = "Anmeldung"
-    pageRef = "/2025/anmeldung"
+    name = "Chess-Results"
+    url = "https://s3.chess-results.com/tnr1056124.aspx?lan=0&SNode=S0"
     weight = 1
   [[menu.main]]
     name = "Ausschreibung"
