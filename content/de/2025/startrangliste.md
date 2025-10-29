@@ -28,7 +28,7 @@ Letztes Update: Tue Oct 28 20:33:20 2025 +0100
 17	Held,Martin		1935	1858	M	Erfurter Schachklub	GER	1993	12902039	10079211
 18	Zimmermann,Felix	B	1914	1932	M	SV Grün-W. Niederwiesa	GER	1998	12989720	10262226
 19	Alvermann,Christian,Dr.	B	1870	1917	M	VfB Schach Leipzig e.V.	GER	1989	24680214	10263553
-20	Röß,Jonas	B	1892	1814	M	SV Würzburg von 1865 e.V.		2000	16288254	10713938
+20	Röß,Jonas	B	1892	1814	M	SV Würzburg von 1865 e.V.	GER	2000	16288254	10713938
 21	Gandera,Moritz	B	1804	1889	M	SC Rochade Steinbach-Hallenberg	GER	2005	16252659	10574215
 22	Wüstehube,Harry	B	1889	1699	M	SAbt TG 1949 Wehlheiden	GER	1955	24614084	10247588
 23	Eisenbach,Markus,Dr.		1888	1530	M	Ilmenauer SV	GER	1984	34663630	10043553

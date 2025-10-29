@@ -102,6 +102,6 @@ Das 2. Ilmenauer Open 2025 und das 2. Ilmenauer Open Blitz 2025 sind Turniere, d
 
 Die Auswertung der Gruppen erfolgt von oben nach unten. Um eine doppelte Preisvergabe zu vermeiden, wird der Sieger einer Gruppe in den nachfolgenden Gruppen nicht mehr berücksichtigt.
 
-In den DWZ-Kategorien und beim Heldenpokal werden ausschließlich Teilnehmer berücksichtigt, die zu Turnierbeginn eine gültige DWZ hatten. Der Heldenpokal wird an den Teilnehmer vergeben, der älter als Jahrgang 2006 ist und gemäß Swiss-Chess die größte virtuelle DWZ-Steigerung erzielt hat, wobei die oben genannte Regelung zur Vermeidung von Doppelvergaben beachtet wird.
+In den TWZ-Kategorien und beim Heldenpokal werden ausschließlich Teilnehmer berücksichtigt, die zu Turnierbeginn eine gültige TWZ hatten. Der Heldenpokal wird an den Teilnehmer vergeben, der älter als Jahrgang 2006 ist und gemäß Swiss-Chess die größte virtuelle DWZ-Steigerung erzielt hat, wobei die oben genannte Regelung zur Vermeidung von Doppelvergaben beachtet wird.
 
 Für die Preisvergabe gilt: Als U18 werden alle Teilnehmer gewertet, die Jahrgang 2006 oder jünger sind.
