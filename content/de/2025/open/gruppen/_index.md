@@ -4,9 +4,6 @@ toc: false
 type: docs
 ---
 
-{{< callout type="important" icon="sparkles" >}}    
-Die Liste wird im Verlauf der ersten Runde aktualisiert.
-{{< /callout >}}
 
 {{< callout type="info" >}}
 Aufgrund der hohen Nachfrage im vergangenen Jahr präsentieren wir Ihnen in diesem Jahr die Sondergruppen.

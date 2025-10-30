@@ -4,10 +4,6 @@ toc: false
 type: docs
 ---
 
-{{< callout type="important" icon="sparkles" >}}    
-Die Liste wird im Verlauf der ersten Runde aktualisiert.
-{{< /callout >}}
-
 ## Startrangliste
 ## nach Runde 1
 ## nach Runde 2
