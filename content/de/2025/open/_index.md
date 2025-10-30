@@ -9,7 +9,6 @@ type: docs
 {{< cards >}}
 {{< card link="../ausschreibung" title="Ausschreibung" icon="user" >}}
 {{< card link="../startrangliste" title="Startrangliste" icon="user" >}}
-{{< card link="../anmeldung" title="Anmeldung" icon="user" target="_blank">}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< card link="../download/" title="Downloads" icon="user" target="_blank">}}
 {{< card link="../bilder" title="Bilder" icon="user" target="_blank">}}
