@@ -53,7 +53,7 @@
 &lt;td&gt;Eichenauer,Pascal&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
@@ -66,7 +66,7 @@
 &lt;td&gt;Katzmann,Kimi&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;1 - 0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
@@ -79,7 +79,7 @@
 &lt;td&gt;Heinz,Thomas&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
@@ -92,7 +92,7 @@
 &lt;td&gt;Wagner,Martin&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;½ - ½&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;7&lt;/td&gt;
@@ -144,7 +144,7 @@
 &lt;td&gt;Köberl,Christiane&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;1 - 0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;11&lt;/td&gt;
@@ -157,7 +157,7 @@
 &lt;td&gt;Geißhirt,Marco&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;12&lt;/td&gt;
@@ -209,7 +209,7 @@
 &lt;td&gt;Mehlhorn,Uwe&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;16&lt;/td&gt;
@@ -222,7 +222,7 @@
 &lt;td&gt;Hübner,Jakob&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;1 - 0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;17&lt;/td&gt;
@@ -235,7 +235,7 @@
 &lt;td&gt;Alvermann,Christian,Dr.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;18&lt;/td&gt;
@@ -261,7 +261,7 @@
 &lt;td&gt;Meitzner,Jonathan Franz&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;20&lt;/td&gt;
@@ -287,7 +287,7 @@
 &lt;td&gt;Schelhorn,Paul&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;22&lt;/td&gt;
@@ -313,7 +313,7 @@
 &lt;td&gt;Röß,Jonas&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;24&lt;/td&gt;
@@ -326,7 +326,7 @@
 &lt;td&gt;Pantleon,Florian&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;1 - 0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;25&lt;/td&gt;
@@ -339,7 +339,7 @@
 &lt;td&gt;Handschuh,Franz&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;26&lt;/td&gt;
@@ -352,7 +352,7 @@
 &lt;td&gt;Brand,Thomas&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;1 - 0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;27&lt;/td&gt;
@@ -365,7 +365,7 @@
 &lt;td&gt;Rudolph,Max&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;0 - 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;28&lt;/td&gt;
