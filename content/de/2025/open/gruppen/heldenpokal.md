@@ -4,7 +4,6 @@ toc: false
 type: docs
 ---
 
-## Startrangliste
 
 <startrangliste>
 1	Philipp,Mathias	CM	2164	2184	M	SSV Vimaria 91 Weimar	GER	1999	12958883	10269201
@@ -39,11 +38,3 @@ type: docs
 55	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
 56	Dohrn,Andreas				M	Schachclub Rote Rüben Leipzig e.	GER	1967	356093943	10038196
 </startrangliste>
-
-## nach Runde 1
-## nach Runde 2
-## nach Runde 3
-## nach Runde 4
-## nach Runde 5
-## nach Runde 6
-## nach Runde 7
