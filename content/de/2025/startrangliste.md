@@ -5,7 +5,7 @@ type: docs
 ---
 
 {{< callout type="important" icon="sparkles" >}}    
-Letztes Update: Tue Oct 28 20:33:20 2025 +0100
+Letztes Update: Thu Oct 30 09:31:10 2025 +0100
 {{< /callout >}}
 
 <startrangliste>
@@ -33,7 +33,7 @@ Letztes Update: Tue Oct 28 20:33:20 2025 +0100
 22	Boroshnev,Dmytro		1703	1840	M	Schachclub Turm Erfurt	UKR	2014	34163611	10868643
 23	Röß,Jonas		1892	1814	M	SV Würzburg von 1865 e.V.	GER	2000	16288254	10713938
 24	Strohner,Maximilian		1762	1800	M	Schachclub Turm Erfurt	GER	1993	34660607	10218260
-25	Handschuh,Franz		1788	1775	M	Schachverein Stützerbach	GER	1948	34602615	10073513
+25	Handschuh,Franz		1788	1775	M	SV Stützerbach	GER	1948	34602615	10073513
 26	Heitmann,Erik		1761	1771	M	Erfurter Schachklub	GER	2012	34608940	10764825
 27	Rudolph,Max		1828	1741	M	Eintracht Munster 2020	GER	1993	12912875	10181983
 28	Rauch,Arwid		1779	1704	M	Ilmenauer SV	GER	2003	16215923	10283822
@@ -65,5 +65,6 @@ Letztes Update: Tue Oct 28 20:33:20 2025 +0100
 54	Brand,Thomas		1509	1192	M	Ilmenauer SV	GER	1979	34641009	10764827
 55	Winger,Frank			838	M	Ilmenauer SV	GER	1964	16233069	10651767
 56	Dohrn,Andreas				M	Schachclub Rote Rüben Leipzig e.	GER	1967	356093943	10038196
-
+57	Wäldchen,Anna			1068	W	Ilmenauer SV	GER	2013	533005435	10845229
+58	Wäldchen,Bruno			788	M	Ilmenauer SV	GER	2015	533006024	10870459
 </startrangliste>
