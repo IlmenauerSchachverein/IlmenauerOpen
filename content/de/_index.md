@@ -65,10 +65,6 @@ Falls etwas nicht wie erwartet funktioniert, schreiben Sie uns bitte eine E-Mail
 
 ## Sondergruppen
 
-{{< callout type="info" >}}
-Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
-{{< /callout >}}
-
 {{< cards >}}
 {{< card link="2025/open/gruppen/u18" title="U18" icon="user" >}}
 {{< card link="2025/open/gruppen/heldenpokal" title="Heldenpokal" icon="user" >}}
@@ -88,9 +84,6 @@ Auf Wunsch der Teilnehmer sind nun auch die Sondergruppen online verfügbar.
 
 ## Blitzturnier
 
-{{< callout type="info" >}}
-Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachgetragen. Am 01.11.2025, im Verlauf der fünften Runde des Opens, werden die Tabellen aktualisiert. Bitte nutzen Sie während des Turniers den externen Dienst [chess-results.com](https://chess-results.com/tnr1059056.aspx?lan=0) für aktuelle Informationen.
-{{< /callout >}}
 
 ### Wichtige Informationen
 
