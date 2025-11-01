@@ -85,10 +85,6 @@ Falls etwas nicht wie erwartet funktioniert, schreiben Sie uns bitte eine E-Mail
 
 ## Blitzturnier
 
-{{< callout type="info" >}}
-Die Tabellen (für das Blitzturnier) werden erst **nach** dem Blitzturnier nachgetragen. Am 01.11.2025, im Verlauf der fünften Runde des Opens, werden die Tabellen aktualisiert. Bitte nutzen Sie während des Turniers den externen Dienst [chess-results.com](https://chess-results.com/tnr1059056.aspx?lan=0) für aktuelle Informationen.
-{{< /callout >}}
-
 ### Wichtige Informationen
 
 {{< cards >}}
