@@ -46,14 +46,6 @@ googleAnalytics = "G-BFH7CVL2EJ"
     pageRef = "/2025/startrangliste"
     weight = 1
   [[menu.main]]
-    name = "Datenschutzerklärung"
-    pageRef = "datenschutz"
-    weight = 3
-  [[menu.main]]
-    name = "Impressum"
-    pageRef = "impressum"
-    weight = 3
-  [[menu.main]]
     name = "Ilmenauer Schachverein ↗"
     url = "https://ilmenauer-schachverein.de"
     weight = 4
