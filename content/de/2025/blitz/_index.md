@@ -6,7 +6,6 @@ type: docs
 
 ## Wichtige Informationen 
 {{< cards >}}
-  {{< card link="../ausschreibung_blitz" title="Ausschreibung" icon="user" >}}
   {{< card link="startrangliste" title="Startrangliste" icon="user" >}}
   {{< card link="https://chess-results.com/tnr1059056.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< /cards >}}
