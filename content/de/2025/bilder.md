@@ -5,4 +5,6 @@ type: docs
 ---
 
 
-{{< gallery match="/gallery/2025/*" rowHeight="150" margins="5" >}}
+{{< load-photoswipe >}}
+
+{{< gallery dir="/2025/images/" caption-position="none" hover-effect="zoom" />}}

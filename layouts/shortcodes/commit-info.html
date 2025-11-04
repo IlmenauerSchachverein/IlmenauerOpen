@@ -1,5 +1,7 @@
 {{ with .Page.GitInfo }}
-<p>Commit Zeit: {{ .AuthorDate | time.Format "02.01.2006 15:04:05" }} von {{ .AuthorName }} auf {{ .AbbreviatedHash }}</p>
+<p>
+    Commit Zeit: {{ .AuthorDate | time.Format "02.01.2006 15:04:05" }} von {{ .AuthorName }} auf {{ .AbbreviatedHash }}
+</p>
 {{ else }}
 <p>GitInfo nicht verfügbar</p>
 {{ end }}
