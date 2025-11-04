@@ -3,7 +3,9 @@ title: Bilder
 toc: false
 type: docs
 ---
-
+{{< callout type="info" >}}
+Da die Bilder in Originalqualität vorliegen, lädt die Website langsamer und kann ruckeln.
+{{< /callout >}}
 
 {{< load-photoswipe >}}
 
