@@ -36,6 +36,7 @@ Falls etwas nicht wie erwartet funktioniert, schreiben Sie uns bitte eine E-Mail
 {{< cards >}}
 {{< card link="2025/ausschreibung" title="Ausschreibung" icon="user" >}}
 {{< card link="2025/startrangliste" title="Startrangliste" icon="user" >}}
+{{< card link="2025/bilder" title="Bilder" icon="user" >}}
 {{< card link="https://chess-results.com/tnr1056124.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< /cards >}}
 
