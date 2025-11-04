@@ -1,0 +1,4 @@
+<img src='{{ (.Get "src") | relURL }}'
+     alt='{{ .Get "alt" }}'
+     {{ with .Get "class" }}class='{{ . }}'{{ end }}
+     {{ with .Get "style" }}style='{{ . }}'{{ end }}>
