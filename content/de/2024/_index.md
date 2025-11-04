@@ -16,6 +16,7 @@ Schachbegeisterung. Viel Spaß beim Ilmenauer Open 2024!
 
 {{< cards >}}
 {{< card link="ausschreibung" title="Ausschreibung" icon="user" >}}
+{{< card link="bilder" title="Bilder" icon="user" >}}
 {{< card link="startrangliste" title="Startrangliste" icon="user" >}}
 {{< card link="https://chess-results.com/tnr796000.aspx?lan=0" title="Chess-Results" icon="user" target="_blank">}}
 {{< /cards >}}
