@@ -105,12 +105,11 @@ jobs:
     needs: build-deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo (with LFS)
+      - name: Checkout Repo
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: main
-          lfs: true
 
       - name: Push to GitLab
         env:
@@ -121,10 +120,6 @@ jobs:
 
           git remote remove gitlab 2>/dev/null || true
           git remote add gitlab "https://oauth2:${GITLAB_PAT}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
-
-          git lfs install --local
-          git lfs fetch --all
-          git lfs push --all gitlab main
 
           git push --force gitlab main
           git push --force --tags gitlab
