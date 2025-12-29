@@ -122,4 +122,5 @@ jobs:
           git remote remove gitlab 2>/dev/null || true
           git remote add gitlab "https://oauth2:${GITLAB_PAT}@gitlab.erik-skopp.de/ilmenauerschachverein/turniere/ilmenaueropen.git"
 
-          git push --force gitlab main --tags
+          git push --force --progress gitlab main --tags
+
